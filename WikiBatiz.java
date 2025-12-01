@@ -5,6 +5,11 @@ public class WikiBatiz {
   static boolean activo = true;
   static boolean reinicio = false;
 
+      public static void main(String[] args){
+            ImprimirNombre();
+            Separacion();
+      }
+  
       public static int NumRango(String[] opciones, int minimo, int maximo) {
         int numIngresado = LeerNum();
         boolean bandera = (numIngresado < minimo) || (numIngresado > maximo);
@@ -47,17 +52,17 @@ public class WikiBatiz {
     }
 
     public static void ImprimirNombre() {
-        System.out.println(" ____________________________________________________________________________________________________________ ");
-        System.out.println("|                                                                                                            |");
+        System.out.println(" _____________________________________________________________________________________________________________");
+        System.out.println("|                                                                                                             |");
         System.out.println("|      :::       ::: ::::::::::: :::    ::: ::::::::::: :::::::::      ::: ::::::::::: ::::::::::: ::::: :::: |");
-        System.out.println("|     :+:       :+:     :+:     :+:   :+:      :+:     :+:    :+:   :+: :+:   :+:         :+:          :+:   |");
-        System.out.println("|    +:+       +:+     +:+     +:+  +:+       +:+     +:+    +:+  +:+   +:+  +:+         +:+         +:+     |");
-        System.out.println("|   +#+  +:+  +#+     +#+     +#++:++        +#+     +#++:++#+  +#++:++#++: +#+         +#+        +#+       |");
-        System.out.println("|  +#+ +#+#+ +#+     +#+     +#+  +#+       +#+     +#+    +#+ +#+     +#+ +#+         +#+       +#+         |");
-        System.out.println("|  #+#+# #+#+#      #+#     #+#   #+#      #+#     #+#    #+# #+#     #+# #+#         #+#      #+#           |");
-        System.out.println("|  ###   ###   ########### ###    ### ########### #########  ###     ### ###     ########### #########       |");
-        System.out.println("|                                                                                                            |");
-        System.out.println("|____________________________________________________________________________________________________________|");
+        System.out.println("|     :+:       :+:     :+:     :+:   :+:      :+:     :+:    :+:   :+: :+:   :+:         :+:          :+:    |");
+        System.out.println("|    +:+       +:+     +:+     +:+  +:+       +:+     +:+    +:+  +:+   +:+  +:+         +:+         +:+      |");
+        System.out.println("|   +#+  +:+  +#+     +#+     +#++:++        +#+     +#++:++#+  +#++:++#++: +#+         +#+        +#+        |");
+        System.out.println("|  +#+ +#+#+ +#+     +#+     +#+  +#+       +#+     +#+    +#+ +#+     +#+ +#+         +#+       +#+          |");
+        System.out.println("|  #+#+# #+#+#      #+#     #+#   #+#      #+#     #+#    #+# #+#     #+# #+#         #+#      #+#            |");
+        System.out.println("|  ###   ###   ########### ###    ### ########### #########  ###     ### ###     ########### #########        |");
+        System.out.println("|                                                                                                             |");
+        System.out.println("|_____________________________________________________________________________________________________________|");
         System.out.println('\n');
     }
 }

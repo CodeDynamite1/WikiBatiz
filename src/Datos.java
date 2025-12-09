@@ -487,8 +487,38 @@ public class Datos {
                                         "|                                                                                                      |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                                                                                      |\r\n" + //
-                                        "|  Lic. Alejandra Salazar Chávez              alsalazarc@ipn.mx                   63810                |\r\n" + //
+                                        "|  Lic. Alejandra Salazar Chávez              alsalazarc@ipn.mx                    63810                |\r\n" + //
                                         "|  Jefa de Departamento de Recursos Financieros                                                        |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  TSU. Oscar Fernández González               osfernandez@ipn.mx                  63838               |\r\n" + //
+                                        "|  Jefe del Departamento de Recursos Materiales y Servicios                                            |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                    SUBDIRECCION DE SERVICIOS EDUCATIVOS E                            |\r\n" + //
+                                        "|                                             INTEGRACION SOCIAL                                       |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|             NOMBRE               |             CORREO           |              EXTENSION             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Lic. Natisma Julieta López Salas            nlopezs@ipn.mx                      63823               |\r\n" + //
+                                        "|  Jefa del Departamento de Gestión Escolar                                                            |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Lic. América Leticia Aldama Silva            alaldamas@ipn.mx                    63850              |\r\n" + //
+                                        "|  Jefa del Departamento de Servicios Estudiantiles                                                    |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Dr. en C. Erick Asiain De la Luz             easiaind@ipn.mx                    63853               |\r\n" + //
+                                        "|  Jefe del Departamento de Extensión y Apoyos Educativos                                              |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Lic. Laura Juana Morales Álvarez              ljmorales@ipn.mx                  63816               |\r\n" + //
+                                        "|  Jefa de la Unidad Politécnica de Integración Social                                                 |\r\n" + //
                                         "|                                                                                                      |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                       

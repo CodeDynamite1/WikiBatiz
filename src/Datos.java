@@ -481,6 +481,24 @@ public class Datos {
                                         "|  Subdirectora Administrativa                                                                         |\r\n" + //
                                         "|                                                                                                      |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Lic. Carmen Berenice Serrano Juarez         cserranoj@ipn.mx                    63806               |\r\n" + //
+                                        "|  Jefa del Departamento de Capital Humano                                                             |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|  Lic. Alejandra Salazar Chávez              alsalazarc@ipn.mx                   63810                |\r\n" + //
+                                        "|  Jefa de Departamento de Recursos Financieros                                                        |\r\n" + //
+                                        "|                                                                                                      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                      
+                                      
+        
+        
+                                      
+                                      
+        
+        
                                       
                                       
         

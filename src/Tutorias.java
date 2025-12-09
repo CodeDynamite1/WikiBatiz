@@ -6,7 +6,7 @@ public class Tutorias {
         int mostrar = menu(Datos.opcionesTutorias);
         switch (mostrar) {
             case 0:
-                System.out.println("error");
+                System.out.println("Volviendo");
                 break;
             default:
                 System.out.println(Datos.mensajeTutorias[mostrar - 1]);
@@ -63,7 +63,7 @@ public class Tutorias {
             return num;
         } catch (InputMismatchException e) {
             Separacion();
-            System.out.println("Error, no haz ingresado un numero");
+            System.out.println("Error, no has ingresado un numero");
             leer.next();
         }
         return num;

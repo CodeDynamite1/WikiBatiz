@@ -206,8 +206,99 @@ public class Datos {
     };
     static String[] mensajeAlumnos = {
             // Información profesores
-            "Nombre profesor: \n" +
-                    "Materia(s) que imparte: \n",
+            
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                              GRUPO: 3IM7                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                              Analitica:                                              |\r\n" + //
+                                        "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+                                        "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                                        "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+                                        "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+                                        "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                              Fisica:                                                 |\r\n" + //
+                                        "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                               Quimica:                                               |\r\n" + //
+                                        "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+                                        "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+                                        "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+                                        "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+                                        "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                              Ingles:                                                 |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                  Laboratorio de desarrollo de software:                              |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                         Programacion Basica:                                         |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                              Algoritmia:                                             |\r\n" + //
+                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Materias que imparte:                                                                               |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Formacion academica:                                                                                |\r\n" + //
+                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                               
+                                        "", 
 
             "2. mensaje 2",
             "3. mensaje 3",

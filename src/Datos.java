@@ -201,7 +201,7 @@ public class Datos {
     static String[] opcionesAlumnos = {
             "1. Informacion de profesores",
             "2. Horarios de profesores",
-            "3. opcion 3",
+            "3. Directorio de Servicios escolares",
             "4. Regresar al menu inicial"
     };
     static String[] mensajeAlumnos = {
@@ -224,7 +224,7 @@ public class Datos {
                                         "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                               Quimica:                                               |\r\n" + //
                                         "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
@@ -235,66 +235,59 @@ public class Datos {
                                         "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
                                         "|  Materias que imparte:                                                                               |\r\n" + //
                                         "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
                                         "|  Materias que imparte:                                                                               |\r\n" + //
                                         "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                              Ingles:                                                 |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
-                                        "|  Materias que imparte:                                                                               |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                                        "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+                                        "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+                                        "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+                                        "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+                                        "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
                                         "|  Materias que imparte:                                                                               |\r\n" + //
                                         "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                                        "|                                  Laboratorio de desarrollo de software:                              |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
-                                        "|  Materias que imparte:                                                                               |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                                        "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                                        "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                                        "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+                                        "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                                        "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+                                        "|  Formacion academica: Informatica                                                                    |\r\n" + //
+                                        "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                         Programacion Basica:                                         |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
                                         "|  Materias que imparte:                                                                               |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                              Algoritmia:                                             |\r\n" + //
-                                        "|  Nombre del profesor:                                                                                |\r\n" + //
+                                        "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
                                         "|  Materias que imparte:                                                                               |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                                        "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                                        "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                                        "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
                                         "|  Formacion academica:                                                                                |\r\n" + //
-                                        "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                                         "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                                

@@ -487,7 +487,7 @@ public class Datos {
                                         "|                                                                                                      |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //
                                         "|                                                                                                      |\r\n" + //
-                                        "|  Lic. Alejandra Salazar Chávez              alsalazarc@ipn.mx                    63810                |\r\n" + //
+                                        "|  Lic. Alejandra Salazar Chávez              alsalazarc@ipn.mx                    63810               |\r\n" + //
                                         "|  Jefa de Departamento de Recursos Financieros                                                        |\r\n" + //
                                         "|                                                                                                      |\r\n" + //
                                         "|------------------------------------------------------------------------------------------------------|\r\n" + //

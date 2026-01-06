@@ -1,0 +1,305 @@
+package original;
+
+public class Datos {
+
+    static String usuarioActual = "Invitado";
+    static String[] opcionesDeportivas = {
+            "1. Consultar horarios",
+            "2. Inscripciones",
+            "3. Profesores titulares",
+            "4. Regresar al menu inicial"};
+    static String[] mensajeDeportivas = {
+            //horarios
+            " ╔═════════════════════════════════════════════════════════════════════════════╗ \n" +
+                    " ║   Horarios      de    Actividades     Deportivas      y      Culturales     ║ \n" +
+                    " ╠═════════════╦═══════════╦════════════╦════════════╦════════════╦════════════╣ \n" +
+                    " ║ Actividades \u2551 Lunes     \u2551 Martes     \u2551 Mi\u00E9rcoles  \u2551 Jueves     \u2551 Viernes    \u2551 \n" +
+                    " ╠═════════════╬═══\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " ║ Atletismo   ║10:00-13:00║09:00-13:00 ║9:00-13:00  ║9:00-13:00  ║9:00-13:00  ║ \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Basquetbol  \u255112:00-16:00\u255112:00-16:00 \u255112:00-16:00 \u255112:00-16:00 \u255112:00-16:00 \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Volibol     \u255112:00-16:00\u255112:00-16:00 \u255112:00-16:00 \u255112:00-16:00 \u255112:00-15:00 \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " ║ Futbol      \u255112:00-15:00\u255112:00-15:00 \u255112:00-15:00 \u255112:00-15:00 \u255112:00-15:00 \u2551 \n" +
+                    " ╠═════════\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Tae Kwon Do \u2551           \u255111:00-13:00 \u2551            \u255111:00-13:00 \u2551            \u2551 \n" +
+                    " \u2551             \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551             \u2551           \u255115:00-17:00 \u2551            \u255115:00-17:00 \u2551            \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Futbol      \u255110:00-12:00\u255110:00-12:00 \u255110:00-12:00 \u255110:00-12:00 \u255110:00-12:00 \u2551 \n" +
+                    " \u2551 Americano   \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551             \u255115:00-17:00\u255115:00-17:00 \u255115:00-17:00 \u255115:00-17:00 \u255115:00-17:00 \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Tocho       \u255111:00-13:00\u255111:00-13:00 \u255111:00-13:00 \u255111:00-13:00 \u255110:00-13:00 \u2551 \n" +
+                    " \u2551 Bandera     \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551             \u255115:00-17:00\u255115:00-17:00 \u2551 15:00-17:00\u255115:00-17:00 \u255115:00-17:00 \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Artes       \u255112:00-17:00\u255112:00-17:00 \u255112:00-17:00 \u255112:00-17:00 \u255112:00-16:00 \u2551 \n" +
+                    " \u2551 Visuales    \u2551 1er piso  \u2551 1er piso   \u2551 1er piso   \u2551 1er piso   \u2551 1er piso   \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Musica      \u255109:00-17:00\u255113:00-16:00 \u255114:00-17:00 \u255111:00-16:00 \u2551            \u2551 \n" +
+                    " \u2551 Foklorica   \u2551 Auditorio \u2551 Auditorio  \u2551 Auditorio  \u2551 Auditorio  \u2551            \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Danza       \u2551           \u255112:00-15:00 \u2551            \u2551            \u255112:00-15:00 \u2551 \n" +
+                    " \u2551 Folklorica  \u2551           \u2551 Auditorio  \u2551            \u2551            \u2551 Auditorio  \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Piano       \u2551           \u2551            \u2551 12:00-18:00\u2551            \u2551            \u2551 \n" +
+                    " \u2551             \u2551           \u2551            \u2551Camerino del\u2551            \u2551            \u2551 \n" +
+                    " \u2551             \u2551           \u2551            \u2551 auditorio  \u2551            \u2551            \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Creacion    \u2551           \u2551            \u2551 19:00-21:00\u2551            \u2551            \u2551 \n" +
+                    " \u2551 Literaria   \u2551           \u2551            \u2551 Virtual    \u2551            \u2551            \u2551 \n" +
+                    " \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256C\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563 \n" +
+                    " \u2551 Teatro      \u2551           \u2551            \u2551            \u2551 11:00-17:00\u2551            \u2551 \n" +
+                    " \u2551             \u2551           \u2551            \u2551            \u2551 Auditorio  \u2551            \u2551 \n" +
+                    " \u255A\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255D \n"
+            ,
+            //inscripciones a actividades
+            " Para realizar tus inscripciones en https://forms.gle./xbSYFKxs5oMV5eCG9",
+            //Profesores titulares
+            "[Actividades Deportivas] \n" +
+                    " Atletismo: Profa. Alma Yadira Quintanar Camacho \n " +
+                    " Basquetbol : Prof.Miguel Angel Ramirez Calnacasco & prof. Carlos del Valle Garcia \n" +
+                    " Volibol: Prof. Miguel Angel Ramirez Calnasco \n" +
+                    " Futbol: Prof.Alfonso Morales Martinez \n" +
+                    " Tae Kwon Do: Arturo Wong \n " +
+                    " GFutbol Americano Varonil : HEAD COACH Rodrigo Galindo Nava \n" +
+                    " Tocho Bandera: HEAD COACH Juan Antonio Rivas Garcia \n" +
+                    "[Actividades Culturales] \n" +
+                    " Artes Visuales : Prof. Guadalupe de la Rosa Castelan \n " +
+                    " Musica Folklorica: Prof. Julio de la Cruz Rodriguez \n" +
+                    " Danza Folklorica: Prof. Emmanuel Flores Don Juan \n" +
+                    " Piano: Prof.Eduardo Gomez Alarcon \n" +
+                    " Creacion Literaria Profa. Rosa Maria Getino \n" +
+                    " Teatro: Prof. Alexis Badillo Ortiz \n"
+            ,
+            "Espera..."
+    };
+    static String[] opcionesTutorias = {
+            "1. Matemáticas",
+            "2. Física",
+            "3. Química",
+            "4. Área Humanística",
+            "5. Inglés",
+            "6. Sistemas Digitales",
+            "7. Programación",
+            "8. Orientación Juevenil y Profesional",
+            "9. Dibujo Técnico"
+
+    };
+    static String[] mensajeTutorias = {
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "|                                      Lunes      Martes      Miércoles      Jueves        Viernes     |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "|                                   Álgebra / Geometría y Trigonometría                                |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "| María Eugenia Flores Olvera   |             |             |             | 10:00-11:00 |  9:00-11:00  |\r\n" +
+                                        "| Arturo Neumann Martínez       | 13:00-15:00 |             | 13:00-15:00 |             | 13:00-15:00  |\r\n" +
+                                        "| Alicia Mata Avilés            | 10:00-12:00 |             |             |             |              |\r\n" +
+                                        "| Guillermo Carrasco García     | 15:00-16:00 | 15:00-16:00 | 15:00-16:00 | 15:00-16:00 | 15:00-16:00  |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "|                             Geometría Analítica / Cálculo Diferencial                                |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "| Ubaldo Bonilla Jiménez        |             |             | 9:00-10:00  | 9:00-10:00  |              |\r\n" +
+                                        "| Hermenegildo Barrera Hdz.     | 14:00-15:00 | 14:00-15:00 | 14:00-15:00 |             | 14:00-15:00  |\r\n" +
+                                        "| Citlali Sofía Rincón Ruíz     |             | 11:00-12:00 |             | 10:00-12:00 | 9:00-10:00   |\r\n" +
+                                        "| Xóchitl Ramírez Marquina      |             |             |             | 17:00-18:00 |              |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" +
+                                        "|                       Cálculo Integral / Probabilidad y Estadística                                  |\r\n" +
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| José Antonio Cortés Pérez     |             | 13:00-15:00 |             |             | 13:00-15:00  |\r\n" + //
+                                        "| Elisa Magdalena Chirinos A.   |             | 10:00-12:00 | 11:00-12:00 |             |              |\r\n" + //
+                                        "| Jesús Alejandro Arreola Hdz.  | 18:00-20:00 |             | 15:00-16:00 | 13:00-14:00 | 18:00-19:00  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| TODOS SE ENCUENTRAN EN CUBÍCULOS DE MATEMÁTICAS EXCEPTO ARTURO NEUMANN (SALÓN 16).                   |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "",
+
+
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                     Lunes      Martes      Miércoles      Jueves        Viernes      |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Ayala Falcon Raúl Moíses      | 11:00-12:00 | 13:00-14:00 | 13:00-14:00 | 12:00-13:00 |              |\r\n" + //
+                                        "| Cruz Morales Pedro            | 9:00-11:00  |             |             | 10:00-12:00 |              |\r\n" + //
+                                        "| González García Bernardo      | 13:00-15:00 | 14:00-15:00 | 14:00-15:00 |             | 10:00-11:00  |\r\n" + //
+                                        "| Olguín García Ubaldo          | 13:00-15:00 | 13:00-15:00 | 13:00-15:00 | 13:00-15:00 | 13:00-15:00  |\r\n" + //
+                                        "| Ramírez Espinosa Sergio       |             |             | 14:00-15:00 | 11:00-13:00 | 8:00-9:00    |\r\n" + //
+                                        "| Trujillo Torres José          |             |             | 13:00-14:00 | 15:00-16:00 | 15:00-16:00  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                          TODOS SE ENCUENTRAN EN CUBÍCULOS DE FISICA EN TERCER PISO                   |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "",
+
+
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                      Lunes      Martes      Miércoles      Jueves        Viernes     |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                 QUÍMICA 1                                            |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Blanca Rosa Landa Zamora      | 13:00-15:00 | 12:00-14:00 | 13:00-15:00 | 12:00-14:00 |              |\r\n" + //
+                                        "| Hortencia Medina Fernández    | 14:00-15:00 | 16:00-17:00 | 17:00-18:00 |             | 17:00-18:00  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                 QUÍMICA 2                                            |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Manuel López Montecillos      | 11:00-13:00 | 9:00-10:00  | 10:00-13:00 |             |              |\r\n" + //
+                                        "|                               | 15:00-17:00 |             |             |             |              |\r\n" + //
+                                        "| Hortencia Medina Fernández    |             | 13:00-15:00 | 13:00-15:00 |             |              |\r\n" + //
+                                        "| María Luisa Morlan S.         | 13:00-14:00 | 12:00-15:00 |             | 12:00-13:00 | 13:00-16:00  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                 QUIÍMICA 3                                           |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Felipe A. García S.           | 10:00-11:00 |  8:00-9:00  |             |             | 11:00-13:00  |\r\n" + //
+                                        "|                               | 12:00-14:00 | 12:00-14:00 |             |             |              |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                 QUIÍMICA 4                                           |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Jorge Cortés Pérez            | 16:00-17:00 | 14:00-15:00 | 14:00-16:00 | 15:00-18:00 | 14:00-15:00  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                          TODOS SE ENCUENTRAN EN CUBÍCULOS DE QUÍMICA EN TERCER PISO                  |\r\n" + //
+                                        "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "",
+
+
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                    Ubicación             Lunes      Martes        Miércoles      Jueves        Viernes     |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                      COMUNICACIÓN CIENTÍFICA                                               |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| M. P. Sonia Barrios Sánchez  | Lab. de Biología      | 12:00-13:00 | 11:00-12:00 |             | 7:00-8:00   |             |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                               DESARROLLO DE HABILIDADES DEL PENSAMIENTO                                    |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| G. Adriana Cano Cortez       | Optativas             | 13:00-14:00 | 14:00-15:00 | 14:00-15:00 |             | 14:00-15:00 |\r\n" + //
+                                        "| Ariadna Fernández López      | Optativas             |             | 17:00-18:00 |             | 19:00-20:00 | 15:00-16:00 |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                       DESARROLLO PERSONAL                                                  |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Gabriela Arroyo Castilla     | Historia              |             |             | 13:00-15:00 |             |             |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                  ENTORNO SOCIOECONÓMICO DE MÉXICO                                          |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Jorge G. Cruz Mendoza        | Entorno SE. México    | 16:00-17:00 | 14:00-15:00 | 16:00-18:00 | 15:00-16:00  | 14:00-15:00|\r\n" + //
+                                        "| M. Graciela Gutiérrez Vallejo| Sistemas Digitales    | 12:00-13:00 | 9:00-11:00  |             | 10:00-12:00  | 9:00-10:00 |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                                    EXPRESIÓN ORAL Y ESCRITA                                                |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Norma A. Tello Villarreal    | Lengua y Comunicación | 14:00-15:00 | 14:00-15:00 | 14:00-15:00 | 14:00-15:00  | 14:00-15:00|\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "|                                             HISTORIA DE MÉXICO CONTEMPORÁNEO                                               |\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "| Gabriela Arroyo Castilla     | Historia              |             |             |             | 12:00-13:00  | 14:00-15:00|\r\n" + //
+                                        "|----------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+                                        "",
+    };
+    static String[] opcionesEventos = {
+            "1. Calendario de eventos",
+            "2. Regresar al menu"
+    };
+    static String[] mensajeEventos = {
+            "Debido a la situacion en el plantel no hay eventros proximos",
+            "Espera..."
+    };
+    static String[] opcionesAlumnos = {
+            "1. Informacion de profesores",
+            "2. Horarios de profesores",
+            "3. opcion 3",
+            "4. Regresar al menu inicial"
+    };
+    static String[] mensajeAlumnos = {
+            // Información profesores
+            "Nombre profesor: \n" +
+                    "Materia(s) que imparte: \n",
+
+            "2. mensaje 2",
+            "3. mensaje 3",
+            "Espera..."
+    };
+    static String[] opcionesTramites = {
+            "1. Solicitud de Dictamen",
+            "2. Cambios de carrera o plantel",
+            "3. Inscripci\u00F3n/ Reinscripci\u00F3n",
+            "4. Proceso de Saberes Previos",
+            "5. Trayectoria, constancias y boletas",
+            "6. Bajas temporales y definitivas",
+            "7. Certificados y documentacion de egreso",
+            "8. Regresar al menu inicial "
+    };
+    static String[] mensajeTramites = {
+            //1Dictamen
+            "El periodo de recepci\u00F3n de solicitudes se lleva  \n" +
+                    "a cabo al final del proceso de inscripci\u00F3n de cada \n" +
+                    "semestre. \n" +
+                    "Los alumnos que hayan incumplido con lo esta- \n" +
+                    "blecido en el Reglamento General de Estudios y \n" +
+                    "deseen regularizar su situaci\u00F3n escolar, deben \n" +
+                    "solicitar Dictamen: \n" +
+                    "Cuando el alumno a\u00FAn puede terminar sus estu- \n" +
+                    "dios de nivel medio superior en los t\u00E9rminos del \n" +
+                    "Art. 49 del Reglamento General de Estudios \n" +
+                    "(4 años y medio). \n" +
+                    "Cuando el alumno el alumno rebasa el t\u00E9rmino \n" +
+                    "establecido por el Art. 49 del Reglamento General de \n" +
+                    "Estudios para el t\u00E9rmino de sus estudios (m\u00E1s de 4 a\u00F1os \n" +
+                    "y medio). \n" +
+                    "Para solicitarlo, deben enviar un mensaje de correo electr\u00F3nico \n" +
+                    "a gestion.escolar.cecyt9@gmail.com indicando nombre completo,\n" +
+                    " n\u00FAmero de boleta y situaci\u00F3n escolar \n"
+            ,
+            //2CambiodePlantelCarrera
+            "La convocatoria se publica al final de cada semestre en la siguiente p\u00E1gina web: \n" +
+                    "www.dae.ipn.mx/cambiosua/ \n"
+            ,
+            //3InscripcionReinscripcion
+            "Las fechas y los procedimientos se publican en la p\u00E1gina del \n" +
+                    "CECyT y se difunden a trav\u00E9s de los medios oficiales del plantel. \n" +
+                    "La reinscripci\u00F3n NUNCA es autom\u00E1tica y es obligaci\u00F3n del \n" +
+                    "alumno estar atento a los comunicados que se publican en la \n" +
+                    "página del plantel y de realizar los trámites correspondientes en \n" +
+                    "tiempo y forma. \n" +
+                    "De igual forma, el alumno debe informar de manera INMEDIATA \n" +
+                    "cualquier problema que tenga con su registro de inscripci\u00F3n. \n" +
+                    "Toda la informaci\u00F3n que el alumno proporciona al plantel est\u00E1 \n" +
+                    "protegida por el aviso de privacidad de la instituci\u00F3n y la\n" +
+                    " veracidad de los datos es responsabilidad \u00FAnica del alumno. \n" +
+                    "Estos datos son utilizados para la difusi\u00F3n de informaci\u00F3n \n" +
+                    "oficial, para el tr\u00E1mite de becas y otros est\u00EDmulos, de documentos \n" +
+                    "de egreso y para ponerse en contacto con sus padres y/o \n" +
+                    "tutores en casos de emergencia \n"
+            ,
+            //4SaberesPrevios
+            "El proceso se lleva a cabo al inicio de cada semestre. Las fechas y \n" +
+                    " procedimientos se publican en la p\u00E1gina del CECyT.\n",
+            //5Trayectoria
+            "El departamento de Gesti\u00F3n Escolar expide, a solicitud del alumno, \n" +
+                    "boletas y constancias para diversor tr\u00E1mites. Para solicitarlas, se debe \n" +
+                    "hacer el registro en las ligas abajo indicadas: \n" +
+                    "Boletas de calificaciones \n" +
+                    "https://forms.gle/bm3cfuW85rcozhid6 \n" +
+                    "Constancias de Estudio \n" +
+                    "https://forms.gle/P8b2S7SndaYynn5ZA \n",
+            //6Bajas
+            "BAJA TEMPORAL \n" +
+                    "Se solicita en los primeros 30 d\u00EDas posteriores a la inscripci\u00F3n \n" +
+                    " y puede ser por 6  meses o por 1 a\u00F1o Para solicitarla, se debe \n" +
+                    "escribir un correo electr\u00F3nico al departamento solicitando la liga de\n " +
+                    "registro. \n" +
+                    "BAJA DEFINITIVA \n" +
+                    "Para solicitarla, primero se debe hacer el registro en la siguiente liga: \n " +
+                    "https://forms.gle/phqbsmwKobLqEt8i7 \n" +
+                    "Despu\u00E9s se debe solicitar el tr\u00E1mite de una boleta global de calificaciones \n" +
+                    "(3 firmas) en la siguiente liga: \n" +
+                    "https://forms.gle/bm3cfuW85rcozhid6\n",
+            //7Egreso
+            "CERTIFICACIÓN INTEGRAL \n" +
+                    "Se lleva a cabo \u00FAnicamente en el periodo intersemestral del mes de \n" +
+                    "julio y sirve para agilizar el proceso de certificaci\u00F3n del alumno.\n " +
+                    "El procedimiento se publica en la p\u00E1gina del plantel.\n" +
+                    "ENTREGA DE DOCUMENTACI\u00D3N DE EGRESO \n" +
+                    "Se lleva a cabo al final de cada semestre para los alumnos que han concluido \n" +
+                    "satisfactoriamente sus estudios. El procedimiento se publica en la p\u00E1gina \n" +
+                    "del plantel \n",
+            "Espera..."
+    };
+
+}

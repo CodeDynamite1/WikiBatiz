@@ -1,7 +1,5 @@
 package CLIversion;
 
-import original.WikiBatiz;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -9,74 +7,49 @@ public class Menu {
 
     public static int menu(String[] opciones) {
         mostrarOpciones("Selecciona una opcion", opciones);
-        int eleccion = seleccionMenu(opciones, 1, opciones.length);
-        if (eleccion <= opciones.length) return eleccion;
-        return 0;
+        return seleccionMenu(opciones, 1, opciones.length);
     }
 
     public static void mostrarOpciones(String mensaje, String[] opciones) {
         separacion();
-        separacion();
         System.out.println(mensaje);
         separacion();
-        for (int q = 0; q < opciones.length; q++) {
-            System.out.println(opciones[q]);
+        for (String opcion : opciones) {
+            System.out.println(opcion);
         }
         separacion();
     }
 
     public static int seleccionMenu(String[] opciones, int minimo, int maximo) {
-        int numIngresado = leerNum();
-        boolean bandera = (numIngresado < minimo) || (numIngresado > maximo);
-        while (bandera) {
+        int num = leerNum();
+        while (num < minimo || num > maximo) {
             separacion();
-            System.out.println("Ingresa un valor valido segun el menu");
+            System.out.println("Ingresa un valor valido");
             separacion();
-            for (int i = 0; i < opciones.length; i++) {
-                System.out.println(opciones[i]);
+            for (String opcion : opciones) {
+                System.out.println(opcion);
             }
             separacion();
-            numIngresado = leerNum();
-            if (numIngresado >= minimo && numIngresado <= maximo) {
-                bandera = false;
-            }
+            num = leerNum();
         }
         separacion();
-        return numIngresado;
-    }
-
-    public static int leerNum() {
-        int num = 0;
-        Scanner leer = new Scanner(System.in);
-        try {
-            num = leer.nextInt();
-            return num;
-        } catch (InputMismatchException e) {
-            separacion();
-            System.out.println("Error, no haz ingresado un numero");
-            leer.next();
-        }
         return num;
     }
 
-    public static String leerCadena() {
-        String cadena = "";
-        Scanner leer = new Scanner(System.in);
+    public static int leerNum() {
+        Scanner sc = new Scanner(System.in);
         try {
-            cadena = leer.nextLine();
+            return sc.nextInt();
         } catch (InputMismatchException e) {
-            separacion();
-            System.out.println("Ha ocurrido un error");
-            leer.next();
+            System.out.println("Error: ingresa un numero");
+            sc.next();
+            return leerNum();
         }
-        return cadena;
     }
 
     public static void separacion() {
-        for (int i = 0; i < 150; i++) {
-            System.out.print("═");
-        }
-        System.out.println("");
+        for (int i = 0; i < 120; i++) System.out.print("═");
+        System.out.println();
     }
 
     public static void ImprimirNombre() {
@@ -90,36 +63,5 @@ public class Menu {
         System.out.println("║     ╚══╝╚══╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝ ╚═════╝  ╚═╝  ╚═╝    ╚═╝    ╚═╝ ╚══════╝    ║");
         System.out.println("║                                                                            ║");
         System.out.println("╚════════════════════════════════════════════════════════════════════════════╝");
-        System.out.println('\n');
-    }
-
-    public static int NumEnRango(int minimo, int maximo) {
-        int numIngresado = leerNum();
-        boolean bandera = (numIngresado < minimo) || (numIngresado > maximo);
-        while (bandera) {
-            separacion();
-            numIngresado = leerNum();
-            if (numIngresado >= minimo && numIngresado <= maximo) {
-                bandera = false;
-            }
-        }
-        separacion();
-        return numIngresado;
-    }
-
-    public static int NumEnRango(int minimo, int maximo, String mensaje) {
-        int numIngresado = leerNum();
-        boolean bandera = (numIngresado < minimo) || (numIngresado > maximo);
-        while (bandera) {
-            separacion();
-            System.out.println(mensaje);
-            separacion();
-            numIngresado = leerNum();
-            if (numIngresado >= minimo && numIngresado <= maximo) {
-                bandera = false;
-            }
-        }
-        separacion();
-        return numIngresado;
     }
 }

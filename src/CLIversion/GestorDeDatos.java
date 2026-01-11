@@ -7,10 +7,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**Clase que usa archivos para gestionar datos*/
 public class GestorDeDatos {
     private String nombreDeArchivo;
     private File Archivo;
 
+    /** Crear la clase con su archivo en un directoria especificado*/
     GestorDeDatos(String nombreDeArchivo, String nombreDeCarpeta){
         this.nombreDeArchivo = nombreDeArchivo;
         String carpetaActual = System.getProperty("user.dir");
@@ -26,6 +28,7 @@ public class GestorDeDatos {
         }
     }
 
+    /** Crear la clase con su archivo en el directorio Data*/
     GestorDeDatos(String nombreDeArchivo){
         this.nombreDeArchivo = nombreDeArchivo;
         String carpetaActual = System.getProperty("user.dir");
@@ -40,7 +43,7 @@ public class GestorDeDatos {
             System.out.println("IO error, corregir");
         }
     }
-
+/**Guarda datos añadiendolos al final del archivo*/
     public void guardarDatos(String[] datos){
         try(BufferedWriter escritor = new BufferedWriter(new FileWriter(Archivo,true))){
             for (int i = 0; i < datos.length; i++){
@@ -51,7 +54,7 @@ public class GestorDeDatos {
             System.out.println("Error al guardar datos");
         }
     }
-
+    /**Guarda datos reescribiendo todo el archivo*/
     public void sobreescribirDatos(String[] datos){
         try(BufferedWriter escritor = new BufferedWriter(new FileWriter(Archivo))){
             for (int i = 0; i < datos.length; i++){
@@ -63,6 +66,7 @@ public class GestorDeDatos {
         }
     }
 
+    /**Permite editar datos en una linea especifica*/
     public void editarDatosEnLinea(String datos, int linea){
         String[] temp = leerDatos();
         if (temp.length == 0){
@@ -82,6 +86,7 @@ public class GestorDeDatos {
         sobreescribirDatos(temp);
     }
 
+    /**Lee todas las lieas del archivo y las almacaena en un array*/
     public String[] leerDatos(){
         String linea;
         int longitud = 0;
@@ -159,7 +164,7 @@ public class GestorDeDatos {
             throw new RuntimeException(e);
         }
     }
-    // Nuevo método para leer todo el contenido como String
+    /**Lee todas las lineas del archivo y las concatena en un unico String*/
 public String leerTodoComoString() {
     StringBuilder sb = new StringBuilder();
     String[] lineas = leerDatos();

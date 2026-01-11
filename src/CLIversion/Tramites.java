@@ -1,24 +1,38 @@
 package CLIversion;
 
+/**
+ * Clase de Tramites con el proceso y la informacion
+ */
 public class Tramites extends Menu {
-
+    /**
+     * Crea un gestor de Datos para opciones
+     */
     private static GestorDeDatos opcTramites =
             new GestorDeDatos("tramites_opciones");
+    /**
+     * Crea un gestor de Datos para mensajes
+     */
     private static GestorDeDatos msjTramites =
             new GestorDeDatos("tramites_mensajes");
 
+    /**
+     * Array con las opciones leidas desde el documento
+     */
     public static String[] opcionesTramites = opcTramites.leerDatos();
+    /**
+     * Array con las mensajes leidas desde el documento
+     */
     public static String[] mensajeTramites = msjTramites.leerDatos();
 
-    // 🔴 DEVUELVE true SI QUIERE REGRESAR AL MENÚ
-    public static boolean proceso() {
+    /** Proceso en tramites */
+    public static void proceso() {
 
-        ImprimirNombre();
+        ImprimirArte();
         int mostrar = menu(opcionesTramites);
 
-        // OPCIÓN "REGRESAR AL MENÚ"
+        // opcion regresar al menu
         if (mostrar == opcionesTramites.length) {
-            return true;
+            return;
         }
 
         switch (mostrar) {
@@ -26,11 +40,26 @@ public class Tramites extends Menu {
                 System.out.println("error");
                 break;
             default:
-                // Reemplazamos los \n literales por saltos de línea reales
+                // Toma la cadena de msj, la imprime con saltos en linea para evitar que
+                // quede encimado
                 System.out.println(mensajeTramites[mostrar - 1].replace("\\n", "\n"));
                 break;
         }
 
-        return false;
+        return;
+    }
+
+    /** Imprimir Arte ASCII*/
+    public static void ImprimirArte(){
+        System.out.println("╔══════════════════════════════════════════════════════════════════════════╗")
+        System.out.println("║                                                                          ║");
+        System.out.println("║     ████████╗██████╗  █████╗ ███╗   ███╗██╗████████╗███████╗███████╗     ║");
+        System.out.println("║     ╚══██╔══╝██╔══██╗██╔══██╗████╗ ████║██║╚══██╔══╝██╔════╝██╔════╝     ║");
+        System.out.println("║        ██║   ██████╔╝███████║██╔████╔██║██║   ██║   █████╗  ███████╗     ║");
+        System.out.println("║        ██║   ██╔══██╗██╔══██║██║╚██╔╝██║██║   ██║   ██╔══╝  ╚════██║     ║");
+        System.out.println("║        ██║   ██║  ██║██║  ██║██║ ╚═╝ ██║██║   ██║   ███████╗███████║     ║");
+        System.out.println("║        ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝     ║");
+        System.out.println("║                                                                          ║");
+        System.out.println("╚══════════════════════════════════════════════════════════════════════════╝");
     }
 }

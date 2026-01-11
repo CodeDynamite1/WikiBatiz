@@ -1,12 +1,17 @@
 package CLIversion;
 
-public class WikiBatiz {
+/** Clase Principal con el metodo main */
+
+public class WikiBatiz{
 
     public static void main(String[] args) {
         menuInicial();
     }
 
-    /* ================= MENÚ INICIAL ================= */
+    /**
+     * Menu de Seleccion de Usuario, muestra la opcion administrador o alumno y en base a la
+     * seleccion ejecuta el procso administrador o usuario
+     */
     public static void menuInicial() {
         while (true) {
 
@@ -14,16 +19,15 @@ public class WikiBatiz {
 
             String[] opcionesInicio = {
                     "1. Administrador",
-                    "2. Usuario",
+                    "2. Usuario/ALumno",
                     "3. Salir"
             };
 
-            Menu.mostrarOpciones("Selecciona tu rol", opcionesInicio);
-            int opcion = Menu.seleccionMenu(opcionesInicio, 1, opcionesInicio.length);
+            int opcion = Menu.menu(opcionesInicio);
 
             switch (opcion) {
                 case 1:
-                    // Llamar al panel de administrador
+                    //Llama al panel administrador
                     Administrador.PanelAdministrador();
                     break;
 
@@ -38,7 +42,7 @@ public class WikiBatiz {
         }
     }
 
-    /* ================= MENÚ USUARIO ================= */
+    /** Menu Usuario */
     public static void procesoUsuario() {
 
         while (true) {
@@ -83,7 +87,7 @@ public class WikiBatiz {
         }
     }
 
-    /* ================= ASCII ================= */
+    /** Arte ASCII */
     public static void imprimirNombre() {
         System.out.println("╔════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("║                                                                            ║");

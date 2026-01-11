@@ -20,9 +20,7 @@ public class Administrador {
                 System.out.println("Ahora eres admin");
                 Separacion();
                 
-                // ✅ Ir directamente al menú principal de consultas
-                WikiBatiz.procesoUsuario(); 
-                return; // Salir del método PanelAdministrador
+
             } else {
                 Separacion();
                 if (i != 2) {

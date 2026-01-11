@@ -1,22 +1,19 @@
 package CLIversion;
 
-public class Alumnos extends Menu{
-    private static GestorDeDatos opcAlumnos = new GestorDeDatos("alumnos_opciones");
-    private static GestorDeDatos msjAlumnos = new GestorDeDatos("alumnos_mensajes");
+public class Alumnos extends Menu {
 
-    public static String[] opciones = opcAlumnos.leerDatos();
-    public static String[] mensaje = msjAlumnos.leerDatos();
+    private static GestorDeDatos opc = new GestorDeDatos("alumnos_opciones");
+    private static GestorDeDatos msg = new GestorDeDatos("alumnos_mensajes");
+
+    public static String[] opciones = opc.leerDatos();
+    public static String[] mensajes = msg.leerDatos();
 
     public static void proceso() {
         ImprimirNombre();
-        int mostrar = menu(opciones);
-        switch (mostrar) {
-            case 0:
-                System.out.println("error");
-                break;
-            default:
-                System.out.println(mensaje[mostrar - 1]);
-                break;
-        }
+        int op = menu(opciones);
+
+        if (op == opciones.length) return;
+
+        System.out.println(mensajes[op - 1]);
     }
 }

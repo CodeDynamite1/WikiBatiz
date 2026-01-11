@@ -2,10 +2,10 @@ package CLIversion;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.File;
 
 public class GestorDeDatos {
     private String nombreDeArchivo;
@@ -159,4 +159,16 @@ public class GestorDeDatos {
             throw new RuntimeException(e);
         }
     }
+    // Nuevo método para leer todo el contenido como String
+public String leerTodoComoString() {
+    StringBuilder sb = new StringBuilder();
+    String[] lineas = leerDatos();
+    for (String linea : lineas) {
+        sb.append(linea).append("\n");
+    }
+    return sb.toString();
+}
+
+
+    
 }

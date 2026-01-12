@@ -51,7 +51,7 @@ public class Tramites extends Menu {
 
     /** Imprimir Arte ASCII*/
     public static void ImprimirArte(){
-        System.out.println("╔══════════════════════════════════════════════════════════════════════════╗")
+        System.out.println("╔══════════════════════════════════════════════════════════════════════════╗");
         System.out.println("║                                                                          ║");
         System.out.println("║     ████████╗██████╗  █████╗ ███╗   ███╗██╗████████╗███████╗███████╗     ║");
         System.out.println("║     ╚══██╔══╝██╔══██╗██╔══██╗████╗ ████║██║╚══██╔══╝██╔════╝██╔════╝     ║");
@@ -63,3 +63,4 @@ public class Tramites extends Menu {
         System.out.println("╚══════════════════════════════════════════════════════════════════════════╝");
     }
 }
+

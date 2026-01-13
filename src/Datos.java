@@ -314,8 +314,10 @@ public class Datos {
 
     static String[] mensajeAlumnos = {
             // Información profesores
-                  "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              GRUPO: 3IM6                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Analitica:                                              |\r\n" + //
                     "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
@@ -481,6 +483,91 @@ public class Datos {
                     "|  Formacion academica:                                                                                |\r\n" + //
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "                                                                                                        \r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              GRUPO: 3IM8                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Analitica:                                              |\r\n" + //
+                    "|  Nombre del profesor:Hermenegildo Barrera Hernandez                                                  |\r\n" + //
+                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Fisica:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Nydia Leydi Gonzales Olivares                                                  |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                               Quimica:                                               |\r\n" + //
+                    "|  Nombre del profesor: Blanca Rosa Landa Zamora                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Ingles:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Dafne Camarena Garay                                                           |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                    "|  Nombre del profesor: Octavio Ernesto Dominguez Sosa                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Programacion Basica:                                         |\r\n" + //
+                    "|  Nombre del profesor: Juan Angel Calvillo Perez                                                      |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Algoritmia:                                             |\r\n" + //
+                    "|  Nombre del profesor: Juan Angel Calvillo Perez                                                      |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+        
                     "",
             "2. Debido a la situacion actual del plantel no hay horarios para mostrar",
             "|------------------------------------------------------------------------------------------------------|\r\n" + //

@@ -814,15 +814,15 @@ public class Datos {
              "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
              "|  Formacion academica: Informatica                                                                    |\r\n" + //
              "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Programacion Basica:                                         |\r\n" + //
-                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                         Programacion Basica:                                         |\r\n" + //
+             "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //                               
+             "|  Materias que imparte:                                                                               |\r\n" + //
+             "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+             "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+             "|  Formacion academica:                                                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Algoritmia:                                             |\r\n" + //
                     "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //

@@ -744,76 +744,76 @@ public class Datos {
              "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
              "|------------------------------------------------------------------------------------------------------|\r\n" + //
              "                                                                                                        \r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                      __ _     _  _  o    __ ___    _                                 |\r\n" + //
-                    "|                                     /__|_)| ||_)/ \      __) | |V||_                                 |\r\n" + //
-                    "|                                     \_|| \|_||  \_/ o    __)_|_| ||_)                                |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
-                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
-                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
-                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
-                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
-                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
-                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Ingles:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
-                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
-                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
-                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
-                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
-                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
-                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
-                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                      __ _     _  _  o    __ ___    _                                 |\r\n" + //
+             "|                                     /__|_)| ||_)/ \      __) | |V||_                                 |\r\n" + //
+             "|                                     \_|| \|_||  \_/ o    __)_|_| ||_)                                |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                              Analitica:                                              |\r\n" + //
+             "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+             "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+             "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+             "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                              Fisica:                                                 |\r\n" + //
+             "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+             "|  Materias que imparte:                                                                               |\r\n" + //
+             "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+             "|  Formacion academica:                                                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                               Quimica:                                               |\r\n" + //
+             "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+             "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+             "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+             "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+             "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+             "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+             "|  Materias que imparte:                                                                               |\r\n" + //
+             "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+             "|  Formacion academica:                                                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+             "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+             "|  Materias que imparte:                                                                               |\r\n" + //
+             "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+             "|  Formacion academica:                                                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                              Ingles:                                                 |\r\n" + //
+             "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+             "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+             "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+             "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+             "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+             "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                           Dibujo Tecnico:                                            |\r\n" + //
+             "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+             "|  Materias que imparte:                                                                               |\r\n" + //
+             "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+             "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+             "|  Formacion academica:                                                                                |\r\n" + //
+             "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+             "|------------------------------------------------------------------------------------------------------|\r\n" + //
+             "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+             "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+             "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+             "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+             "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+             "|  Formacion academica: Informatica                                                                    |\r\n" + //
+             "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                         Programacion Basica:                                         |\r\n" + //
                     "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //

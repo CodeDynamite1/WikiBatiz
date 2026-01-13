@@ -471,19 +471,19 @@ public class Datos {
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                         Programacion Basica:                                         |\r\n" + //
                     "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
                     "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Algoritmia:                                             |\r\n" + //
                     "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
                     "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "                                                                                                        \r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //

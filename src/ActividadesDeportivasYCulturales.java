@@ -11,7 +11,12 @@ public class ActividadesDeportivasYCulturales {
                 System.out.println("error");
                 break;
             default:
-                System.out.println(Datos.mensajeDeportivas[mostrar - 1]);
+                String[] imprimir = Datos.mensajeDeportivas[mostrar - 1].split(" ");
+                for (int i = 0; i < imprimir.length; i++) {
+                    System.out.print(imprimir[i] + " ");
+                    if (i % 15 == 0) System.out.print('\n');
+                }
+                System.out.print('\n');
                 break;
         }
     }
@@ -80,10 +85,7 @@ public class ActividadesDeportivasYCulturales {
     }
 
     public static void Separacion() {
-        for (int i = 0; i < 150; i++) {
-            System.out.print("═");
-        }
-        System.out.println('\n');
+            WikiBatiz.Separacion();
     }
 
     public static void ImprimirNombre() {

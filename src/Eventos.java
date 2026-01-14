@@ -10,7 +10,12 @@ public class Eventos    {
                 System.out.println("error");
                 break;
             default:
-                System.out.println(Datos.mensajeEventos[mostrar - 1]);
+                String[] imprimir = Datos.mensajeDeportivas[mostrar - 1].split(" ");
+                for (int i = 0; i < imprimir.length; i++) {
+                    System.out.print(imprimir[i] + " ");
+                    if (i % 15 == 0) System.out.print('\n');
+                }
+                System.out.print('\n');
                 break;
         }
     }
@@ -79,10 +84,7 @@ public class Eventos    {
     }
 
     public static void Separacion() {
-        for (int i = 0; i < 150; i++) {
-            System.out.print("═");
-        }
-        System.out.print('\n');
+        WikiBatiz.Separacion();
     }
      public static void ImprimirEventos() {
         System.out.println("╔════════════════════════════════════════════════════════════════╗");

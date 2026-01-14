@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Tabla {
+public class TablaMaestros {
     private String[][] matriz;
     private int filas;
     private int columnas;
@@ -12,7 +12,7 @@ public class Tabla {
         imprimirEncabezado(nombre);
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.printf("|%12s",matriz[i][j]);
+                System.out.printf("|%50s",matriz[i][j]);
             }
             System.out.println("|");
             separacion();
@@ -22,7 +22,7 @@ public class Tabla {
     public void editarTabla(){
         System.out.println("Imprimiendo contenido de la tabla");
         for (int i = 0; i < matriz.length; i++) {
-            System.out.printf("%12d", i);
+            System.out.printf("%50d", i);
         }
         System.out.print('\n');
 
@@ -62,7 +62,7 @@ public class Tabla {
         return num;
     }
 
-    public Tabla(String[][] arr, String nombrar) {
+    public TablaMaestros(String[][] arr, String nombrar) {
         this.matriz = arr;
         this.filas = arr.length;
         this.columnas = arr[0].length;
@@ -82,4 +82,5 @@ public class Tabla {
         }
         System.out.print('\n');
     }
+
 }

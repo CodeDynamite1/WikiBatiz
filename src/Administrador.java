@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,7 +37,7 @@ public class Administrador {
             int eleccion = menu(opciones);
             switch (eleccion){
                 case 1:
-                    editar(Datos.mensajeDeportivas);
+                    editarActividades(Datos.mensajeDeportivas);
                     break;
                 case 2:
                     editar(Datos.mensajeTramites);break;
@@ -54,6 +53,19 @@ public class Administrador {
                 case 6:
                     return;
             }
+        }
+    }
+
+    public static void editarActividades(String[] accederA){
+        System.out.println("Elige que mensaje editar");
+        int eleccion = menuEditar(accederA);
+        eleccion--;
+        if (eleccion == 0) {
+            Datos.horariosActividades.editarTabla();
+        }else{
+            Scanner sc = new Scanner(System.in);
+            accederA[eleccion] = sc.nextLine();
+            System.out.println(accederA[eleccion]);
         }
     }
 
@@ -138,9 +150,6 @@ public class Administrador {
     }
 
     public static void Separacion() {
-        for (int i = 0; i < 150; i++) {
-            System.out.print("═");
-        }
-        System.out.print('\n');
+        WikiBatiz.Separacion();
     }
 }

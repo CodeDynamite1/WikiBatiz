@@ -214,8 +214,44 @@ public class Datos {
             "2. Regresar al menu"
     };
     static String[] mensajeEventos = {
-            "Debido a la situacion en el plantel no hay eventros proximos",
-            "Espera..."
+"|========================================================================================================================================|\r\n" + //
+"|                                     TERCERA EVALUACIÓN ORDINARIA                               |       ENERO – FEBRERO 2026            |\r\n" + //
+"|========================================================================================================================================|\r\n" + //
+"| DÍA                | SEM | ESP | MATERIA                                                       |     MATUTINO    |      VESPERTINO     |\r\n" + //
+"|========================================================================================================================================|\r\n" + //
+"| Viernes 23 Enero   | 1°  | AB  | Álgebra                                                       | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
+"|                    | 3°  | AB  | Geometría Analítica                                           | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
+"|                    | 5°  | AB  | Cálculo Integral                                              | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
+"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+"| Lunes 26 Enero     | 1°  | AH  | Desarrollo de Habilidades del Pensamiento                     | 09:00 - 09:50   | 15:00 - 15:50       |\r\n" + //
+"|                    | 1°  | AH  | Inglés I                                                      | 11:00 - 11:50   | 17:00 - 17:50       |\r\n" + //
+"|                    | 3°  | AB  | Física I                                                      | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
+"|                    | 5°  | AB  | Física III                                                    | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
+"|                    | 1°  | AB  | Computación Básica I                                          | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+"| Martes 27 Enero    | 1°  | AH  | Desarrollo Personal                                           | 09:00 - 09:50   | 16:00 - 16:50       |\r\n" + //
+"|                    | 1°  | AH  | Filosofía I                                                   | 11:00 - 11:50   | 18:00 - 18:50       |\r\n" + //
+"|                    | 3°  | AH  | Comunicación Científica                                       | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
+"|                    | 3°  | AH  | Inglés III                                                    | 10:00 - 10:50   | 16:00 - 16:50       |\r\n" + //
+"|                    | 3°  | MEC | Metrología y Tecnología de Materiales                         | 12:00 - 13:50   | 18:00 - 19:50       |\r\n" + //
+"|                    | 3°  | SD  | Instrumentación Electrónica                                   | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 3°  | P   | Programación Básica                                           | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 3°  | AH  | Orientación Juvenil y Profesional III                         | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 5°  | MEC | Diseño de Mecanismos Asistidos por Computadora                | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 5°  | SD  | Arquitectura de Microcontroladores                            | 08:00 - 09:50   | 15:00 - 16:50       |\r\n" + //
+"|                    | 5°  | SD  | Acondicionamiento de Sistemas (Op)                            | 11:00 - 12:50   | 18:00 - 19:50       |\r\n" + //
+"|                    | 5°  | P   | Pruebas de Software                                           | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 5°  | P   | Introducción a los Sistemas Distribuidos                     | PRÁCTICO        | PRÁCTICO             |\r\n" + //
+"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
+"| Miércoles 28 Enero | 1°  | AH  | Historia de México Contemporáneo I                            | 10:00 - 10:50   | 17:00 - 17:50       |\r\n" + //
+"|                    | 1°  | AB  | Química I                                                     | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
+"|                    | 3°  | MEC | Proceso de Soldadura en Sistemas Mecatrónicos (Op)            | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 3°  | SD  | Circuitos Electrónicos                                        | 10:00 - 11:50   | 17:00 - 18:50       |\r\n" + //
+"|                    | 3°  | P   | Algoritmia                                                    | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 5°  | AB  | Química III                                                   | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
+"|                    | 5°  | MEC | Dispositivos Lógicos Programables                             | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|                    | 5°  | SD  | Dispositivos Electrónicos                                     | PRÁCTICO        | PRÁCTICO            |\r\n" + //
+"|========================================================================================================================================|\r\n";
     };
 
     static String[] opcionesTramites = {

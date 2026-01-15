@@ -338,6 +338,80 @@ public class Datos{
                     "Se lleva a cabo al final de cada semestre para los alumnos que han concluido  " +
                     "satisfactoriamente sus estudios. El procedimiento se publica en la p\u00E1gina  " +
                     "del plantel  ",
+         //1Dictamen
+            "El periodo de recepci\u00F3n de solicitudes se lleva   " +
+                    "a cabo al final del proceso de inscripci\u00F3n de cada  " +
+                    "semestre.  " +
+                    "Los alumnos que hayan incumplido con lo esta-  " +
+                    "blecido en el Reglamento General de Estudios y  " +
+                    "deseen regularizar su situaci\u00F3n escolar, deben  " +
+                    "solicitar Dictamen:  " +
+                    "Cuando el alumno a\u00FAn puede terminar sus estu-  " +
+                    "dios de nivel medio superior en los t\u00E9rminos del  " +
+                    "Art. 49 del Reglamento General de Estudios  " +
+                    "(4 años y medio).  " +
+                    "Cuando el alumno el alumno rebasa el t\u00E9rmino  " +
+                    "establecido por el Art. 49 del Reglamento General de  " +
+                    "Estudios para el t\u00E9rmino de sus estudios (m\u00E1s de 4 a\u00F1os  " +
+                    "y medio).  " +
+                    "Para solicitarlo, deben enviar un mensaje de correo electr\u00F3nico  " +
+                    "a gestion.escolar.cecyt9@gmail.com indicando nombre completo, " +
+                    " n\u00FAmero de boleta y situaci\u00F3n escolar  "
+            ,
+            //2CambiodePlantelCarrera
+            "La convocatoria se publica al final de cada semestre en la siguiente p\u00E1gina web:  " +
+                    "www.dae.ipn.mx/cambiosua/  "
+            ,
+            //3InscripcionReinscripcion
+            "Las fechas y los procedimientos se publican en la p\u00E1gina del  " +
+                    "CECyT y se difunden a trav\u00E9s de los medios oficiales del plantel.  " +
+                    "La reinscripci\u00F3n NUNCA es autom\u00E1tica y es obligaci\u00F3n del  " +
+                    "alumno estar atento a los comunicados que se publican en la  " +
+                    "página del plantel y de realizar los trámites correspondientes en  " +
+                    "tiempo y forma.  " +
+                    "De igual forma, el alumno debe informar de manera INMEDIATA  " +
+                    "cualquier problema que tenga con su registro de inscripci\u00F3n.  " +
+                    "Toda la informaci\u00F3n que el alumno proporciona al plantel est\u00E1  " +
+                    "protegida por el aviso de privacidad de la instituci\u00F3n y la " +
+                    " veracidad de los datos es responsabilidad \u00FAnica del alumno.  " +
+                    "Estos datos son utilizados para la difusi\u00F3n de informaci\u00F3n  " +
+                    "oficial, para el tr\u00E1mite de becas y otros est\u00EDmulos, de documentos  " +
+                    "de egreso y para ponerse en contacto con sus padres y/o  " +
+                    "tutores en casos de emergencia  "
+            ,
+            //4SaberesPrevios
+            "El proceso se lleva a cabo al inicio de cada semestre. Las fechas y  " +
+                    " procedimientos se publican en la p\u00E1gina del CECyT. ",
+            //5Trayectoria
+            "El departamento de Gesti\u00F3n Escolar expide, a solicitud del alumno,  " +
+                    "boletas y constancias para diversor tr\u00E1mites. Para solicitarlas, se debe  " +
+                    "hacer el registro en las ligas abajo indicadas:  " +
+                    "Boletas de calificaciones  " +
+                    "https://forms.gle/bm3cfuW85rcozhid6  " +
+                    "Constancias de Estudio  " +
+                    "https://forms.gle/P8b2S7SndaYynn5ZA  ",
+            //6Bajas
+            "BAJA TEMPORAL  " +
+                    "Se solicita en los primeros 30 d\u00EDas posteriores a la inscripci\u00F3n  " +
+                    " y puede ser por 6  meses o por 1 a\u00F1o Para solicitarla, se debe  " +
+                    "escribir un correo electr\u00F3nico al departamento solicitando la liga de  " +
+                    "registro.  " +
+                    "BAJA DEFINITIVA  " +
+                    "Para solicitarla, primero se debe hacer el registro en la siguiente liga:   " +
+                    "https://forms.gle/phqbsmwKobLqEt8i7  " +
+                    "Despu\u00E9s se debe solicitar el tr\u00E1mite de una boleta global de calificaciones  " +
+                    "(3 firmas) en la siguiente liga:  " +
+                    "https://forms.gle/bm3cfuW85rcozhid6 ",
+            //7Egreso
+            "CERTIFICACIÓN INTEGRAL  " +
+                    "Se lleva a cabo \u00FAnicamente en el periodo intersemestral del mes de  " +
+                    "julio y sirve para agilizar el proceso de certificaci\u00F3n del alumno.  " +
+                    "El procedimiento se publica en la p\u00E1gina del plantel. " +
+                    "ENTREGA DE DOCUMENTACI\u00D3N DE EGRESO  " +
+                    "Se lleva a cabo al final de cada semestre para los alumnos que han concluido  " +
+                    "satisfactoriamente sus estudios. El procedimiento se publica en la p\u00E1gina  " +
+                    "del plantel  ",
+            
             "Espera..."
     };
 

@@ -4,18 +4,14 @@ import java.util.Scanner;
 
 public class Tramites {
     public static void proceso() {
+        ImprimirTramites();
         int mostrar = menu(Datos.opcionesTramites);
         switch (mostrar) {
             case 0:
                 System.out.println("error");
                 break;
             default:
-                String[] imprimir = Datos.mensajeDeportivas[mostrar - 1].split(" ");
-                for (int i = 0; i < imprimir.length; i++) {
-                    System.out.print(imprimir[i] + " ");
-                    if (i % 15 == 0) System.out.print('\n');
-                }
-                System.out.print('\n');
+                System.out.println(Datos.mensajeTramites[mostrar - 1]);
                 break;
         }
     }
@@ -79,18 +75,29 @@ public class Tramites {
     }
 
     public static void Separacion() {
-        WikiBatiz.Separacion();
+        for (int i = 0; i < 150; i++) {
+            System.out.print("═");
+        }
+        System.out.print('\n');
     }
+
+    public static void printlnColor(String linea){
+        String colorTexto = "\u001B[38;2;44;176;245m";
+        String coloresPolitecnicos = colorTexto;
+        String quitarColores = "\u001b[0m";
+        System.out.println(coloresPolitecnicos + linea + quitarColores);
+    }
+
     public static void ImprimirTramites() {
-        System.out.println("╔═══════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                                                                   ║");
-        System.out.println("║ ████████╗██████╗  █████╗ ███╗   ███╗██╗████████╗███████╗███████╗  ║");
-        System.out.println("║ ╚══██╔══╝██╔══██╗██╔══██╗████╗ ████║██║╚══██╔══╝██╔════╝██╔════╝  ║");
-        System.out.println("║    ██║   ██████╔╝███████║██╔████╔██║██║   ██║   █████╗  ███████╗  ║");
-        System.out.println("║    ██║   ██╔══██╗██╔══██║██║╚██╔╝██║██║   ██║   ██╔══╝  ╚════██║  ║");
-        System.out.println("║    ██║   ██║  ██║██║  ██║██║ ╚═╝ ██║██║   ██║   ███████╗███████║  ║");
-        System.out.println("║    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝  ║");
-        System.out.println("╚═══════════════════════════════════════════════════════════════════╝");
+        printlnColor("╔═══════════════════════════════════════════════════════════════════╗");
+        printlnColor("║                                                                   ║");
+        printlnColor("║ ████████╗██████╗  █████╗ ███╗   ███╗██╗████████╗███████╗███████╗  ║");
+        printlnColor("║ ╚══██╔══╝██╔══██╗██╔══██╗████╗ ████║██║╚══██╔══╝██╔════╝██╔════╝  ║");
+        printlnColor("║    ██║   ██████╔╝███████║██╔████╔██║██║   ██║   █████╗  ███████╗  ║");
+        printlnColor("║    ██║   ██╔══██╗██╔══██║██║╚██╔╝██║██║   ██║   ██╔══╝  ╚════██║  ║");
+        printlnColor("║    ██║   ██║  ██║██║  ██║██║ ╚═╝ ██║██║   ██║   ███████╗███████║  ║");
+        printlnColor("║    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝  ║");
+        printlnColor("╚═══════════════════════════════════════════════════════════════════╝");
         System.out.println('\n');
     }
 }

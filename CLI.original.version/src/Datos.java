@@ -1,5 +1,5 @@
 
-public class Datos{
+public class Datos {
 
     static String usuarioActual = "Invitado";
     static String[] opcionesDeportivas = {
@@ -26,9 +26,9 @@ public class Datos{
             {"Piano", "","", "12:00-18:00", "",""},
             {"Creacion lit", "","", "19:00-21:00", "",""},
             {"Teatro", "","", "", "11:00-17:00",""},
-         
+
     };
-    static TablaHorarios horariosActividades = new TablaHorarios(horariosDeportivas, "Horarios de Actividades Deportivas y culturales");
+    static Tabla horariosActividades = new Tabla(horariosDeportivas, "Horarios de Actividades Deportivas y culturales");
 
 
     static String[] mensajeDeportivas = {
@@ -82,21 +82,22 @@ public class Datos{
             " Para realizar tus inscripciones en https://forms.gle./xbSYFKxs5oMV5eCG9",
             //Profesores titulares
             "[Actividades Deportivas] \n" +
-                    " Atletismo: Profa. Alma Yadira Quintanar Camacho   " +
-                    " Basquetbol : Prof.Miguel Angel Ramirez Calnacasco & prof. Carlos del Valle Garcia  " +
-                    " Volibol: Prof. Miguel Angel Ramirez Calnasco  " +
-                    " Futbol: Prof.Alfonso Morales Martinez  " +
-                    " Tae Kwon Do: Arturo Wong   " +
-                    " GFutbol Americano Varonil : HEAD COACH Rodrigo Galindo Nava  " +
-                    " Tocho Bandera: HEAD COACH Juan Antonio Rivas Garcia  " +
-                    "[Actividades Culturales]  " +
-                    " Artes Visuales : Prof. Guadalupe de la Rosa Castelan   " +
-                    " Musica Folklorica: Prof. Julio de la Cruz Rodriguez  " +
-                    " Danza Folklorica: Prof. Emmanuel Flores Don Juan  " +
-                    " Piano: Prof.Eduardo Gomez Alarcon  " +
-                    " Creacion Literaria Profa. Rosa Maria Getino  " +
-                    " Teatro: Prof. Alexis Badillo Ortiz  "
+                    " Atletismo: Profa. Alma Yadira Quintanar Camacho \n " +
+                    " Basquetbol : Prof.Miguel Angel Ramirez Calnacasco & prof. Carlos del Valle Garcia \n" +
+                    " Volibol: Prof. Miguel Angel Ramirez Calnasco \n" +
+                    " Futbol: Prof.Alfonso Morales Martinez \n" +
+                    " Tae Kwon Do: Arturo Wong \n " +
+                    " GFutbol Americano Varonil : HEAD COACH Rodrigo Galindo Nava \n" +
+                    " Tocho Bandera: HEAD COACH Juan Antonio Rivas Garcia \n" +
+                    "[Actividades Culturales] \n" +
+                    " Artes Visuales : Prof. Guadalupe de la Rosa Castelan \n " +
+                    " Musica Folklorica: Prof. Julio de la Cruz Rodriguez \n" +
+                    " Danza Folklorica: Prof. Emmanuel Flores Don Juan \n" +
+                    " Piano: Prof.Eduardo Gomez Alarcon \n" +
+                    " Creacion Literaria Profa. Rosa Maria Getino \n" +
+                    " Teatro: Prof. Alexis Badillo Ortiz \n"
             ,
+            "Espera..."
     };
     static String[] opcionesTutorias = {
             "1. Matemáticas",
@@ -213,44 +214,8 @@ public class Datos{
             "2. Regresar al menu"
     };
     static String[] mensajeEventos = {
-"|========================================================================================================================================|\r\n" + //
-"|                                     TERCERA EVALUACIÓN ORDINARIA                               |       ENERO – FEBRERO 2026            |\r\n" + //
-"|========================================================================================================================================|\r\n" + //
-"| DÍA                | SEM | ESP | MATERIA                                                       |     MATUTINO    |      VESPERTINO     |\r\n" + //
-"|========================================================================================================================================|\r\n" + //
-"| Viernes 23 Enero   | 1°  | AB  | Álgebra                                                       | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
-"|                    | 3°  | AB  | Geometría Analítica                                           | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
-"|                    | 5°  | AB  | Cálculo Integral                                              | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
-"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
-"| Lunes 26 Enero     | 1°  | AH  | Desarrollo de Habilidades del Pensamiento                     | 09:00 - 09:50   | 15:00 - 15:50       |\r\n" + //
-"|                    | 1°  | AH  | Inglés I                                                      | 11:00 - 11:50   | 17:00 - 17:50       |\r\n" + //
-"|                    | 3°  | AB  | Física I                                                      | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
-"|                    | 5°  | AB  | Física III                                                    | 09:00 - 10:50   | 16:00 - 17:50       |\r\n" + //
-"|                    | 1°  | AB  | Computación Básica I                                          | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
-"| Martes 27 Enero    | 1°  | AH  | Desarrollo Personal                                           | 09:00 - 09:50   | 16:00 - 16:50       |\r\n" + //
-"|                    | 1°  | AH  | Filosofía I                                                   | 11:00 - 11:50   | 18:00 - 18:50       |\r\n" + //
-"|                    | 3°  | AH  | Comunicación Científica                                       | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
-"|                    | 3°  | AH  | Inglés III                                                    | 10:00 - 10:50   | 16:00 - 16:50       |\r\n" + //
-"|                    | 3°  | MEC | Metrología y Tecnología de Materiales                         | 12:00 - 13:50   | 18:00 - 19:50       |\r\n" + //
-"|                    | 3°  | SD  | Instrumentación Electrónica                                   | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 3°  | P   | Programación Básica                                           | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 3°  | AH  | Orientación Juvenil y Profesional III                         | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 5°  | MEC | Diseño de Mecanismos Asistidos por Computadora                | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 5°  | SD  | Arquitectura de Microcontroladores                            | 08:00 - 09:50   | 15:00 - 16:50       |\r\n" + //
-"|                    | 5°  | SD  | Acondicionamiento de Sistemas (Op)                            | 11:00 - 12:50   | 18:00 - 19:50       |\r\n" + //
-"|                    | 5°  | P   | Pruebas de Software                                           | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 5°  | P   | Introducción a los Sistemas Distribuidos                     | PRÁCTICO        | PRÁCTICO             |\r\n" + //
-"|----------------------------------------------------------------------------------------------------------------------------------------|\r\n" + //
-"| Miércoles 28 Enero | 1°  | AH  | Historia de México Contemporáneo I                            | 10:00 - 10:50   | 17:00 - 17:50       |\r\n" + //
-"|                    | 1°  | AB  | Química I                                                     | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
-"|                    | 3°  | MEC | Proceso de Soldadura en Sistemas Mecatrónicos (Op)            | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 3°  | SD  | Circuitos Electrónicos                                        | 10:00 - 11:50   | 17:00 - 18:50       |\r\n" + //
-"|                    | 3°  | P   | Algoritmia                                                    | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 5°  | AB  | Química III                                                   | 08:00 - 08:50   | 15:00 - 15:50       |\r\n" + //
-"|                    | 5°  | MEC | Dispositivos Lógicos Programables                             | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|                    | 5°  | SD  | Dispositivos Electrónicos                                     | PRÁCTICO        | PRÁCTICO            |\r\n" + //
-"|========================================================================================================================================|\r\n"
+            "Debido a la situacion en el plantel no hay eventros proximos",
+            "Espera..."
     };
 
     static String[] opcionesTramites = {
@@ -265,79 +230,63 @@ public class Datos{
     };
     static String[] mensajeTramites = {
             //1Dictamen
-            "El periodo de recepci\u00F3n de solicitudes se lleva   " +
-                    "a cabo al final del proceso de inscripci\u00F3n de cada  " +
-                    "semestre.  " +
-                    "Los alumnos que hayan incumplido con lo esta-  " +
-                    "blecido en el Reglamento General de Estudios y  " +
-                    "deseen regularizar su situaci\u00F3n escolar, deben  " +
-                    "solicitar Dictamen:  " +
-                    "Cuando el alumno a\u00FAn puede terminar sus estu-  " +
-                    "dios de nivel medio superior en los t\u00E9rminos del  " +
-                    "Art. 49 del Reglamento General de Estudios  " +
-                    "(4 años y medio).  " +
-                    "Cuando el alumno el alumno rebasa el t\u00E9rmino  " +
-                    "establecido por el Art. 49 del Reglamento General de  " +
-                    "Estudios para el t\u00E9rmino de sus estudios (m\u00E1s de 4 a\u00F1os  " +
-                    "y medio).  " +
-                    "Para solicitarlo, deben enviar un mensaje de correo electr\u00F3nico  " +
-                    "a gestion.escolar.cecyt9@gmail.com indicando nombre completo, " +
-                    " n\u00FAmero de boleta y situaci\u00F3n escolar  "
+            "El periodo de recepci\u00F3n de solicitudes se lleva a cabo al final del proceso de inscripci\u00F3n de cada \n" +
+                    "semestre. \n" +
+                    "Los alumnos que hayan incumplido con lo establecido en el Reglamento General de Estudios y \n" +
+                    "deseen regularizar su situaci\u00F3n escolar, deben solicitar Dictamen: \n" +
+                    "Cuando el alumno a\u00FAn puede terminar sus estudios de nivel medio superior en los t\u00E9rminos del \n" +
+                    "Art. 49 del Reglamento General de Estudios (4 años y medio). \n" +
+                    "Cuando el alumno el alumno rebasa el t\u00E9rmino establecido por el Art. 49 del Reglamento General de \n" +
+                    "Estudios para el t\u00E9rmino de sus estudios (m\u00E1s de 4 a\u00F1os y medio). \n" +
+                    "Para solicitarlo, deben enviar un mensaje de correo electr\u00F3nico a gestion.escolar.cecyt9@gmail.com indicando nombre completo,\n" +
+                    " n\u00FAmero de boleta y situaci\u00F3n escolar \n"
             ,
             //2CambiodePlantelCarrera
-            "La convocatoria se publica al final de cada semestre en la siguiente p\u00E1gina web:  " +
-                    "www.dae.ipn.mx/cambiosua/  "
+            "La convocatoria se publica al final de cada semestre en la siguiente p\u00E1gina web: \n" +
+                    "www.dae.ipn.mx/cambiosua/ \n"
             ,
             //3InscripcionReinscripcion
-            "Las fechas y los procedimientos se publican en la p\u00E1gina del  " +
-                    "CECyT y se difunden a trav\u00E9s de los medios oficiales del plantel.  " +
-                    "La reinscripci\u00F3n NUNCA es autom\u00E1tica y es obligaci\u00F3n del  " +
-                    "alumno estar atento a los comunicados que se publican en la  " +
-                    "página del plantel y de realizar los trámites correspondientes en  " +
-                    "tiempo y forma.  " +
-                    "De igual forma, el alumno debe informar de manera INMEDIATA  " +
-                    "cualquier problema que tenga con su registro de inscripci\u00F3n.  " +
-                    "Toda la informaci\u00F3n que el alumno proporciona al plantel est\u00E1  " +
-                    "protegida por el aviso de privacidad de la instituci\u00F3n y la " +
-                    " veracidad de los datos es responsabilidad \u00FAnica del alumno.  " +
-                    "Estos datos son utilizados para la difusi\u00F3n de informaci\u00F3n  " +
-                    "oficial, para el tr\u00E1mite de becas y otros est\u00EDmulos, de documentos  " +
-                    "de egreso y para ponerse en contacto con sus padres y/o  " +
-                    "tutores en casos de emergencia  "
+            "Las fechas y los procedimientos se publican en la p\u00E1gina del CECyT y se difunden a trav\u00E9s de los medios oficiales del plantel. \n" +
+                    "La reinscripci\u00F3n NUNCA es autom\u00E1tica y es obligaci\u00F3n del alumno estar atento a los comunicados que se publican en la \n" +
+                    "página del plantel y de realizar los trámites correspondientes en \n" +
+                    "tiempo y forma. \n" +
+                    "De igual forma, el alumno debe informar de manera INMEDIATA cualquier problema que tenga con su registro de inscripci\u00F3n. \n" +
+                    "Toda la informaci\u00F3n que el alumno proporciona al plantel est\u00E1 protegida por el aviso de privacidad de la instituci\u00F3n y la\n" +
+                    " veracidad de los datos es responsabilidad \u00FAnica del alumno. \n" +
+                    "Estos datos son utilizados para la difusi\u00F3n de informaci\u00F3n oficial, para el tr\u00E1mite de becas y otros " +
+                    "est\u00EDmulos, de documentos de egreso y para ponerse en contacto con sus padres y/o tutores en casos de emergencia \n"
             ,
             //4SaberesPrevios
-            "El proceso se lleva a cabo al inicio de cada semestre. Las fechas y  " +
-                    " procedimientos se publican en la p\u00E1gina del CECyT. ",
+            "El proceso se lleva a cabo al inicio de cada semestre. Las fechas y \n" +
+                    " procedimientos se publican en la p\u00E1gina del CECyT.\n",
             //5Trayectoria
-            "El departamento de Gesti\u00F3n Escolar expide, a solicitud del alumno,  " +
-                    "boletas y constancias para diversor tr\u00E1mites. Para solicitarlas, se debe  " +
-                    "hacer el registro en las ligas abajo indicadas:  " +
-                    "Boletas de calificaciones  " +
-                    "https://forms.gle/bm3cfuW85rcozhid6  " +
-                    "Constancias de Estudio  " +
-                    "https://forms.gle/P8b2S7SndaYynn5ZA  ",
+            "El departamento de Gesti\u00F3n Escolar expide, a solicitud del alumno,boletas y constancias para diversor tr\u00E1mites. Para solicitarlas, se debe \n" +
+                    "hacer el registro en las ligas abajo indicadas: \n" +
+                    "Boletas de calificaciones \n" +
+                    "https://forms.gle/bm3cfuW85rcozhid6 \n" +
+                    "Constancias de Estudio \n" +
+                    "https://forms.gle/P8b2S7SndaYynn5ZA \n",
             //6Bajas
-            "BAJA TEMPORAL  " +
-                    "Se solicita en los primeros 30 d\u00EDas posteriores a la inscripci\u00F3n  " +
-                    " y puede ser por 6  meses o por 1 a\u00F1o Para solicitarla, se debe  " +
-                    "escribir un correo electr\u00F3nico al departamento solicitando la liga de  " +
-                    "registro.  " +
-                    "BAJA DEFINITIVA  " +
-                    "Para solicitarla, primero se debe hacer el registro en la siguiente liga:   " +
-                    "https://forms.gle/phqbsmwKobLqEt8i7  " +
-                    "Despu\u00E9s se debe solicitar el tr\u00E1mite de una boleta global de calificaciones  " +
-                    "(3 firmas) en la siguiente liga:  " +
-                    "https://forms.gle/bm3cfuW85rcozhid6 ",
+            "BAJA TEMPORAL \n" +
+                    "Se solicita en los primeros 30 d\u00EDas posteriores a la inscripci\u00F3n \n" +
+                    " y puede ser por 6  meses o por 1 a\u00F1o Para solicitarla, se debe \n" +
+                    "escribir un correo electr\u00F3nico al departamento solicitando la liga de\n " +
+                    "registro. \n" +
+                    "BAJA DEFINITIVA \n" +
+                    "Para solicitarla, primero se debe hacer el registro en la siguiente liga: \n " +
+                    "https://forms.gle/phqbsmwKobLqEt8i7 \n" +
+                    "Despu\u00E9s se debe solicitar el tr\u00E1mite de una boleta global de calificaciones \n" +
+                    "(3 firmas) en la siguiente liga: \n" +
+                    "https://forms.gle/bm3cfuW85rcozhid6\n",
             //7Egreso
-            "CERTIFICACIÓN INTEGRAL  " +
-                    "Se lleva a cabo \u00FAnicamente en el periodo intersemestral del mes de  " +
-                    "julio y sirve para agilizar el proceso de certificaci\u00F3n del alumno.  " +
-                    "El procedimiento se publica en la p\u00E1gina del plantel. " +
-                    "ENTREGA DE DOCUMENTACI\u00D3N DE EGRESO  " +
-                    "Se lleva a cabo al final de cada semestre para los alumnos que han concluido  " +
-                    "satisfactoriamente sus estudios. El procedimiento se publica en la p\u00E1gina  " +
-                    "del plantel  ",
-        
+            "CERTIFICACIÓN INTEGRAL \n" +
+                    "Se lleva a cabo \u00FAnicamente en el periodo intersemestral del mes de \n" +
+                    "julio y sirve para agilizar el proceso de certificaci\u00F3n del alumno.\n " +
+                    "El procedimiento se publica en la p\u00E1gina del plantel.\n" +
+                    "ENTREGA DE DOCUMENTACI\u00D3N DE EGRESO \n" +
+                    "Se lleva a cabo al final de cada semestre para los alumnos que han concluido \n" +
+                    "satisfactoriamente sus estudios. El procedimiento se publica en la p\u00E1gina \n" +
+                    "del plantel \n",
             "Espera..."
     };
 
@@ -347,415 +296,6 @@ public class Datos{
             "3. Directorio de Servicios escolares",
             "4. Regresar al menu inicial"
     };
-
-    static String[][] analiticaHermenegildo = {
-        {"Nombre del profesor:" , "Barrera Hernandez Hermenegildo"},
-        {"Materias que imparte:" ,"Geometria Analitica"},
-        {"Ubicacion de cubiculo:" ,"Matematicas"},
-        {"Correo Institucional o Medio de contacto:" , ""},
-        {"Formacion academica:" , ""},
-        {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaHermenegildo = new TablaMaestros(analiticaHermenegildo, "Analitica");
-
-    static String[][] fisicaBernardo = {
-            {"Nombre del profesor:" , "Bernardo Gonzales Garcia"},
-            {"Materias que imparte:" ,"Fisica"},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , "50"},
-    };
-
-    static TablaMaestros tablaBernardo = new TablaMaestros(fisicaBernardo, "Fisica");
-
-    static String[][] quimicaBlanca = {
-            {"Nombre del profesor:" , "Blanca Rosa Landa Zamora"},
-            {"Materias que imparte:" ,"Quimica"},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaBlancaQuimica = new TablaMaestros(quimicaBlanca, "Quimica");
-
-    static String[][] comunicacionSonia = {
-            {"Nombre del profesor:" , "Martha P. Sonia Barrios Sanchez"},
-            {"Materias que imparte:" ,"Comunicacion Cientifica / Biologia"},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaSonia = new TablaMaestros(comunicacionSonia, "Comunicacion cientifica");
-
-    static String[][] entornoNidia = {
-            {"Nombre del profesor:" , "Nidia Aviles Garcia "},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaNidiaEntorno = new TablaMaestros(entornoNidia, "Entorno SocioEconomico de Mexico");
-
-    static String[][] inglesVirginia = {
-            {"Nombre del profesor:" , "Virginia Zuñiga Martinez"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaVirginia = new TablaMaestros(inglesVirginia, "Ingles");
-
-    static String[][] dibujoRosa = {
-            {"Nombre del profesor:" , "Rosa Maria Gallegos Vazquez"},
-            {"Materias que imparte:" ,"Dibujo Tecnico"},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaRosaDibujo = new TablaMaestros(dibujoRosa, "Dibujo Tecnico");
-
-    static String[][] circuitosMargarita = {
-            {"Nombre del profesor:" , "Margarita Chavez Martinez"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMargaritaCircuitosL = new TablaMaestros(circuitosMargarita, "Circuitos Logicos Combinatorios");
-    static TablaMaestros tablaMargaritaInstrumentacion = tablaMargaritaCircuitosL;
-
-    static String[][] circuitosMtehuala = {
-            {"Nombre del profesor:" , "Mtehuala Mayen Ma. Del Carmen"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMtehualaCircuitosE = new TablaMaestros(circuitosMtehuala, "Circuitos Electronicos");
-
-    static String[][] analiticaMata = {
-            {"Nombre del profesor:" , "Alicia Mata Aviles"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMata = new TablaMaestros(analiticaMata, "Geometria Analitica");
-
-    static String[][] fisicaNydia = {
-            {"Nombre del profesor:" , "Nydia Leydi Gonzales Olivares"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaNydiaFisica = new TablaMaestros(fisicaNydia, "Fisica");
-
-    static String[][] quimicaGabriela = {
-            {"Nombre del profesor:" , "Angela Gabriela Gaspar Sanchez"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaGabrielaQuimica = new TablaMaestros(quimicaGabriela, "Quimica");
-
-    static String[][] comunicacionEduardo = {
-            {"Nombre del profesor:" , "Eduardo Zamora Brito"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaEduardoComunicacion = new TablaMaestros(comunicacionEduardo, "Comunicacion Cientifica");
-
-    static String[][] inglesCoconi = {
-            {"Nombre del profesor:" , "Claudia Rueda Coconi"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaCoconiIngles = new TablaMaestros(inglesCoconi, "Ingles");
-
-    static String[][] dibujoMitzi = {
-            {"Nombre del profesor:" , "Jocelyn Mitzi Avelardo Quiroz "},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMitziDibujo = new TablaMaestros(dibujoMitzi, "Dibujo Tecnico");
-
-    static String[][] circuitosAida = {
-            {"Nombre del profesor:" , "Anabel Aida Flores Orozco"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaAidaCircuitos = new TablaMaestros(circuitosAida, "Circuitos Logicos Combinatorios");
-
-    static String[][] circuitosErnesto = {
-            {"Nombre del profesor:" , "Luis Ernesto Rosales Sanchez"},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaErnestoCircuitosE = new TablaMaestros(circuitosErnesto, "Circuitos Electricos");
-
-    static String[][] analiticaUbaldo = {
-            {"Nombre del profesor:" , "Ubaldo Bonilla Jimenez"},
-            {"Materias que imparte:" ,"Geometria Analitica"},
-            {"Ubicacion de cubiculo:" ,"Matematicas"},
-            {"Correo Institucional o Medio de contacto:" , "bubaldo68@gmail.com"},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , "30 años"},
-    };
-
-    static TablaMaestros tablaUbaldoAnalitica = new TablaMaestros(analiticaUbaldo, "Geometria Analitica");
-
-    static String[][] quimicaZyanya = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaZyanyaQuimica = new TablaMaestros(quimicaZyanya, "Quimica");
-
-    static String[][] entornoGraciela = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaGracielaEntorno = new TablaMaestros(entornoGraciela, "Entorno");
-
-    static String[][] inglesTeresa = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaTeresaIngles = new TablaMaestros(inglesTeresa, "Ingles");
-
-    static String[][] dibujoMirza = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMirzaDibujo = new TablaMaestros(dibujoMirza, "Dibujp Tecnico");
-
-    static String[][] circuitosEmanuel = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaEmanuelCircuitosL = new TablaMaestros(circuitosEmanuel, "Circuitos Logicos Combinatorios");
-
-    static String[][] circuitosXochitl = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaXochitlCircuitosE = new TablaMaestros(circuitosXochitl, "Circuitos Electricos");
-
-    static String[][] dibujoMariaFelisia = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaMariaFelisiaDibujo = new TablaMaestros(dibujoMariaFelisia, "Dibujo Tecnico");
-
-    static String[][]  metrologiaOscar = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaOscarMetrologia = new TablaMaestros(metrologiaOscar, "Metrologia y tecnologia de materiales");
-
-    static String[][]  electrotecniaLilia = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaLiliaElectrotecnia = new TablaMaestros(electrotecniaLilia, "Electrotecnia de corriente alterna y directa");
-
-    static String[][]  soldaduraJoaquin = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaJoaquinSoldadura = new TablaMaestros(soldaduraJoaquin, "Procesos de soldaduras en mecatronica");
-
-    static String[][]  analiticaGamaliel = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaGamalielAnalitica = new TablaMaestros(analiticaGamaliel, "Geometria Analitica");
-
-    static String[][]  fisicaSegio = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaSergioFisica = new TablaMaestros(fisicaSegio, "Fisica");
-
-    static String[][]  inglesLizzete = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaLizzeteIngles = new TablaMaestros(inglesLizzete, "Ingles");
-
-    static String[][]  dibujoLLerena = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaLlerenaDibujo = new TablaMaestros(dibujoLLerena, "Dibujo Tecnico");
-
-    static String[][]  metrologiaRosa = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaRosaMetrologia = new TablaMaestros(metrologiaRosa, "Metrologia y tecnologia de materiales");
-
-    static String[][]  fisicaErnesto = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaErnestoFisica = new TablaMaestros(fisicaErnesto, "Fisica");
-
-    static String[][]  inglesDafne = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaDafneIngles = new TablaMaestros(inglesDafne, "Ingles");
-
-    static String[][]  comunicacionAlonso = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaAlonsoComunicacion = new TablaMaestros(comunicacionAlonso, "Comunicacion Cientifica");
-
-    static String[][]  dibujoKenia = {
-            {"Nombre del profesor:" , ""},
-            {"Materias que imparte:" ,""},
-            {"Ubicacion de cubiculo:" ,""},
-            {"Correo Institucional o Medio de contacto:" , ""},
-            {"Formacion academica:" , ""},
-            {"Experiencia docente o años de servicio:" , ""},
-    };
-
-    static TablaMaestros tablaKeniaDibujo = new TablaMaestros(dibujoKenia, "Dibujo Tecnico");
-
 
     static String[] tablasGrupos = {
             "|------------------------------------------------------------------------------------------------------|\r\n" + //
@@ -842,7 +382,8 @@ public class Datos{
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                     "|  Formacion academica:                                                                                |\r\n" + //
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n",
+                    "|------------------------------------------------------------------------------------------------------|\r\n" , //
+
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                             GRUPO: 3IM2                                              |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
@@ -927,351 +468,12 @@ public class Datos{
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                     "|  Formacion academica:                                                                                |\r\n" + //
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" ,
+
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              GRUPO: 3IM3                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                       CARRERA: SISTEMAS DIGITALES                                    |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
-                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
-                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
-                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Gonzales Olivares Nydia Leydi                                                  |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
-                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
-                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
-                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Ingles:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Cortes Sanchez Teresa                                                          |\r\n" + //
-                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
-                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
-                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Davila Gutierrez Mirza                                                         |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                   Circuitos Logicos Combinatorios:                                   |\r\n" + //
-                    "|  Nombre del profesor: Gil Ladron de Guevara Israel Emanuel                                           |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                        Circuitos Electronicos:                                       |\r\n" + //
-                    "|  Nombre del profesor: Hernandez Cruz Xochil                                                          |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                        Instrumentacion Electronica:                                  |\r\n" + //
-                    "|  Nombre del profesor: Chavez Martinez Margarita                                                      |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              GRUPO: 3IM4                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor: Barrera Hernandez Hermenegildo                                                 |\r\n" + //
-                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
-                    "|  Materias que imparte: Fisica I,II,III,IV,V                                                          |\r\n" + //
-                    "|  Ubicacion de cubiculo: Tercer Piso                                                                  |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: N/A                                                       |\r\n" + //
-                    "|  Formacion academica: Fisico                                                                         |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 35                                                          |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Landa Zamora Blanca Rosa                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: Zamora Brito Eduardo                                                           |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Aviles Garcia Nidia                                                            |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Ingles:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Rueda Coconi Claudia                                                           |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Hernandez Flores Maria Felisa                                                  |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                  Metrologia y Tecnologia de Materiales:                              |\r\n" + //
-                    "|  Nombre del profesor: Fernandez Gonzales Oscar                                                      |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                        Electrotecnia de Corriente Continua y Corriente Alterna:                      |\r\n" + //
-                    "|  Nombre del profesor: Lima Herrera Sara Lilia                                                        |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                            Procesos de Soldadura en Sistemas Mecatronicos:                           |\r\n" + //
-                    "|  Nombre del profesor: Hernandeez Sanchez Joaquin                                                     |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n",
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              GRUPO: 3IM5                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor: Diaz Monroy Gilberto Gamaliel                                                  |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Ramierez Espinosa Sergio                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Gaspar Sanchez Angela Gabriela                                                 |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: Zamora Brito Eduardo                                                           |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Aviles Garcia Nidia                                                            |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Ingles:                                                |\r\n" + //
-                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
-                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
-                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
-                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Llerena Nuñez Angel                                                            |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                 Metrologia y Tecnologia de Materiales:                               |\r\n" + //
-                    "|  Nombre del profesor: Marinez Perez Rosa Elena                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                        Electrotecnia de Corriente Continua y Corriente Alterna:                      |\r\n" + //
-                    "|  Nombre del profesor: Lima Herrera Sara Lilia                                                        |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                            Procesos de Soldadura en Sistemas Mecatronicos:                           |\r\n" + //
-                    "|  Nombre del profesor: Hernandeez Sanchez Joaquin                                                     |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                             Grupo 3IM6                                               |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor: Diaz Monroy Gilbero Gamaliel                                                   |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica: Licenciado. Fisica y Matematicas                                               |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Gamiño Cruz Enesto                                                             |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
-                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
-                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
-                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: artinez Montaño Luis Alonso                                                    |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Aviles Garcia Nidia                                                            |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Ingles III:                                             |\r\n" + //
-                    "|  Nombre del profesor: Cmarena Garay Dafne                                                            |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Llerena Nuñez Sanchez                                                          |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                  Metrologia y Tecnologia de Materiales:                              |\r\n" + //
-                    "|  Nombre del profesor: Marines Perez Rosa Elena                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                        Electrotecnia de Corriente Continua y Corriente Alterna:                      |\r\n" + //
-                    "|  Nombre del profesor: Lima Herrera Sara Lilia                                                        |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                            Procesos de Soldadura en Sistemas Mecatronicos:                           |\r\n" + //
-                    "|  Nombre del profesor: Hernandeez Sanchez Joaquin                                                     |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Grupo 3IM7                                              |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                          CARRERA: PROGRAMACIÓN                                       |\r\n" + //
+                    "|                                       CARRERA: Sistemas Digitales                                    |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Analitica:                                              |\r\n" + //
                     "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
@@ -1283,11 +485,11 @@ public class Datos{
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Fisica:                                                 |\r\n" + //
                     "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
-                    "|  Materias que imparte: Fisica I,II,III,IV,V                                                          |\r\n" + //
-                    "|  Ubicacion de cubiculo: Tercer Piso                                                                  |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: N/A                                                       |\r\n" + //
-                    "|  Formacion academica: Fisico                                                                         |\r\n" + //
-                    "|  Experiencia docente o años de servicio: 35                                                          |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                               Quimica:                                               |\r\n" + //
                     "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
@@ -1352,7 +554,352 @@ public class Datos{
                     "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
                     "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
                     "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
+                    "|------------------------------------------------------------------------------------------------------|\r\n",
+
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              GRUPO: 3IM4                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                          CARRERA: PROGRAMACIÓN                                       |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Analitica:                                              |\r\n" + //
+                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Fisica:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                               Quimica:                                               |\r\n" + //
+                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Ingles:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
+                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Programacion Basica:                                         |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Algoritmia:                                             |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" ,
+
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              GRUPO: 3IM5                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                          CARRERA: PROGRAMACIÓN                                       |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Analitica:                                              |\r\n" + //
+                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Fisica:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                               Quimica:                                               |\r\n" + //
+                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Ingles:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
+                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Programacion Basica:                                         |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Algoritmia:                                             |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" ,
+
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                             Grupo 3IM6                                               |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                          CARRERA: MECATRONICA                                        |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Analitica:                                              |\r\n" + //
+                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Fisica:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                               Quimica:                                               |\r\n" + //
+                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Ingles:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
+                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Programacion Basica:                                         |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Algoritmia:                                             |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" ,
+
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "| Grupo 3IM7                                                                                           |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                          CARRERA: PROGRAMACIÓN                                       |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Analitica:                                              |\r\n" + //
+                    "|  Nombre del profesor:Ubaldo Bonilla Jimenez                                                          |\r\n" + //
+                    "|  Materias que imparte:Geometria Analitica                                                            |\r\n" + //
+                    "|  Ubicacion de cubiculo:Matematicas                                                                   |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:bubaldo68@gmail.com                                        |\r\n" + //
+                    "|  Formacion academica:Licenciado. Fisica y Matematicas                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 30 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Fisica:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Bernardo Gonzalez Garcia                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 50                                                          |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                               Quimica:                                               |\r\n" + //
+                    "|  Nombre del profesor: Zyanya Tonantzin Mendoza Medina                                                |\r\n" + //
+                    "|  Materias que imparte: Quimmica I,II,III,IV                                                          |\r\n" + //
+                    "|  Ubicacion de cubiculo: Quimica Laboratorio II y II, 3er piso                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:zmandozam@ipn.mx                                           |\r\n" + //
+                    "|  Formacion academica: Licenciada en Ciencias Ambientales con especialidad en educacion               |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
+                    "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
+                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Ingles:                                                 |\r\n" + //
+                    "|  Nombre del profesor: Silvia Lizzete Gomez Sanchez                                                   |\r\n" + //
+                    "|  Materias que imparte: Ingles I,II,III,IV,V,VI                                                       |\r\n" + //
+                    "|  Ubicacion de cubiculo: Al lado de prefectura                                                        |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: sgomez@ipn.mx                                             |\r\n" + //
+                    "|  Formacion academica: Licenciada. Ciencias de la informatica                                         |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 16 años                                                     |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
+                    "|  Materias que imparte:                                                                               |\r\n" + //
+                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
+                    "|  Formacion academica:                                                                                |\r\n" + //
+                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
+                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
+                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
+                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                         Programacion Basica:                                         |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
+                    "|                                              Algoritmia:                                             |\r\n" + //
+                    "|  Nombre del profesor: German Gutierrez Galan                                                         |\r\n" + //
+                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
+                    "|  Ubicacion de cubiculo: Academia de programacion, cubiculo 2                                         |\r\n" + //
+                    "|  Correo Institucional o Medio de contacto: ggerdoc@gmail.com                                         |\r\n" + //
+                    "|  Formacion academica: Licenciado en Informatica                                                      |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 8 años                                                      |\r\n" + //
+                    "|------------------------------------------------------------------------------------------------------|\r\n",
+
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                             Grupo 3IM8                                               |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
@@ -1437,7 +984,8 @@ public class Datos{
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                     "|  Formacion academica:                                                                                |\r\n" + //
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
+                    "|------------------------------------------------------------------------------------------------------|\r\n" ,
+
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                             Grupo 3IM9                                               |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
@@ -1460,97 +1008,12 @@ public class Datos{
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Aviles Mariño Laura Elsa                                                       |\r\n" + //
+                    "|  Nombre del profesor: Blanca Rosa Landa Zamora                                                       |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //
                     "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
                     "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Comunicacion Cientifica:                                     |\r\n" + //
-                    "|  Nombre del profesor: Zamora Brito Eduardo                                                           |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                    Entorno Socioeconomico de México:                                 |\r\n" + //
-                    "|  Nombre del profesor: Maria Graciela Gutierrez Vallejo                                               |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Ingles:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Cortes Sanchez Teresa                                                          |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Gallegos Vasquez Rosa Maria                                                    |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
-                    "|  Nombre del profesor: Ramirez Solis Enrique                                                          |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         Programacion Basica:                                         |\r\n" + //
-                    "|  Nombre del profesor: Rosa Iliana Fuentes Cruz                                                       |\r\n" + //
-                    "|  Materias que imparte: Programacion                                                                  |\r\n" + //
-                    "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto: rfuentescoa@gmail.com                                     |\r\n" + //
-                    "|  Formacion academica: Informatica                                                                    |\r\n" + //
-                    "|  Experiencia docente o años de servicio: N/A                                                         |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Algoritmia:                                             |\r\n" + //
-                    "|  Nombre del profesor: Cruz Mendoza Juan Manuel                                                       |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n", //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                             Grupo 3IM10                                              |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                         CARRERA: PROGRAMACIÓN                                        |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Analitica:                                              |\r\n" + //
-                    "|  Nombre del profesor: Diaz Monry Gilberto Gamaliel                                                   |\r\n" + //
-                    "|  Materias que imparte: Geometria Analitica                                                           |\r\n" + //
-                    "|  Ubicacion de cubiculo: Matematicas                                                                  |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                              Fisica:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Ramires Espinosa Sergio                                                        |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
-                    "|------------------------------------------------------------------------------------------------------|\r\n" + //
-                    "|                                               Quimica:                                               |\r\n" + //
-                    "|  Nombre del profesor: Garcia Silvia Felipe.A                                                         |\r\n" + //
-                    "|  Materias que imparte:                                                                               |\r\n" + //
-                    "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
-                    "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
-                    "|  Formacion academica:                                                                                |\r\n" + //
-                    "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
+                    "|  Experiencia docente o años de servicio: 12 años                                                     |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                         Comunicacion Cientifica:                                     |\r\n" + //
                     "|  Nombre del profesor: Martha Sonia.P.Barrios Sanchez                                                 |\r\n" + //
@@ -1569,7 +1032,7 @@ public class Datos{
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                              Ingles:                                                 |\r\n" + //
-                    "|  Nombre del profesor: Zuñiga Martines Virginia                                                       |\r\n" + //
+                    "|  Nombre del profesor: Dafne Camarena Garay                                                           |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //
                     "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
@@ -1577,7 +1040,7 @@ public class Datos{
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                           Dibujo Tecnico:                                            |\r\n" + //
-                    "|  Nombre del profesor: Llerena Nuñeez Angel                                                           |\r\n" + //
+                    "|  Nombre del profesor: Kenia Evangelista Rivera                                                       |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //
                     "|  Ubicacion de cubiculo:                                                                              |\r\n" + //
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
@@ -1585,7 +1048,7 @@ public class Datos{
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                 Laboratorio de desarrollo de software:                               |\r\n" + //
-                    "|  Nombre del profesor: Torrojillos Jaimes Roberto Carlos                                              |\r\n" + //
+                    "|  Nombre del profesor: Octavio Ernesto Dominguez Sosa                                                 |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //
                     "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
@@ -1593,7 +1056,7 @@ public class Datos{
                     "|  Experiencia docente o años de servicio:                                                             |\r\n" + //
                     "|------------------------------------------------------------------------------------------------------|\r\n" + //
                     "|                                         Programacion Basica:                                         |\r\n" + //
-                    "|  Nombre del profesor: Dominguez Sosa Octavio Ernesto                                                 |\r\n" + //
+                    "|  Nombre del profesor: Juan Angel Calvillo Perez                                                      |\r\n" + //
                     "|  Materias que imparte:                                                                               |\r\n" + //
                     "|  Ubicacion de cubiculo: Academia de programacion                                                     |\r\n" + //
                     "|  Correo Institucional o Medio de contacto:                                                           |\r\n" + //
@@ -1611,9 +1074,11 @@ public class Datos{
 
     };
 
+
     static String[] mensajeAlumnos = {
             // Información profesores
-             "tablas",
+
+            "",
     
                     "|-----------------------------------------------------------------------------------------|\r\n" + //
                     "|                              BONILLA JIMENEZ UBALDO                                     |\r\n" + //

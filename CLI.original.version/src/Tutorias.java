@@ -4,18 +4,14 @@ import java.util.Scanner;
 
 public class Tutorias {
     public static void Menu() {
+        ImprimirTutorias();
         int mostrar = menu(Datos.opcionesTutorias);
         switch (mostrar) {
             case 0:
                 System.out.println("error");
                 break;
             default:
-                String[] imprimir = Datos.mensajeDeportivas[mostrar - 1].split(" ");
-                for (int i = 0; i < imprimir.length; i++) {
-                    System.out.print(imprimir[i] + " ");
-                    if (i % 15 == 0) System.out.print('\n');
-                }
-                System.out.print('\n');
+                System.out.println(Datos.mensajeTutorias[mostrar - 1]);
                 break;
         }
     }
@@ -80,18 +76,29 @@ public class Tutorias {
     }
 
     public static void Separacion() {
-        WikiBatiz.Separacion();
+        for (int i = 0; i < 150; i++) {
+            System.out.print("═");
+        }
+        System.out.print('\n');
     }
-           public static void ImprimirTutorias() {
-        System.out.println("╔══════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                                                                  ║");
-        System.out.println("║ ████████╗██╗   ██╗████████╗ ██████╗ ██████╗ ██╗ █████╗ ███████╗  ║");
-        System.out.println("║ ╚══██╔══╝██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗██║██╔══██╗██╔════╝  ║");
-        System.out.println("║    ██║   ██║   ██║   ██║   ██║   ██║██████╔╝██║███████║███████╗  ║");
-        System.out.println("║    ██║   ██║   ██║   ██║   ██║   ██║██╔══██╗██║██╔══██║╚════██║  ║");
-        System.out.println("║    ██║   ╚██████╔╝   ██║   ╚██████╔╝██║  ██║██║██║  ██║███████║  ║");
-        System.out.println("║    ╚═╝    ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝  ║");
-        System.out.println("╚══════════════════════════════════════════════════════════════════╝");
+
+    public static void printlnColor(String linea){
+        String colorTexto = "\u001B[38;2;132;245;39m";
+        String coloresPolitecnicos = colorTexto;
+        String quitarColores = "\u001b[0m";
+        System.out.println(coloresPolitecnicos + linea + quitarColores);
+    }
+
+    public static void ImprimirTutorias() {
+        printlnColor("╔══════════════════════════════════════════════════════════════════╗");
+        printlnColor("║                                                                  ║");
+        printlnColor("║ ████████╗██╗   ██╗████████╗ ██████╗ ██████╗ ██╗ █████╗ ███████╗  ║");
+        printlnColor("║ ╚══██╔══╝██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗██║██╔══██╗██╔════╝  ║");
+        printlnColor("║    ██║   ██║   ██║   ██║   ██║   ██║██████╔╝██║███████║███████╗  ║");
+        printlnColor("║    ██║   ██║   ██║   ██║   ██║   ██║██╔══██╗██║██╔══██║╚════██║  ║");
+        printlnColor("║    ██║   ╚██████╔╝   ██║   ╚██████╔╝██║  ██║██║██║  ██║███████║  ║");
+        printlnColor("║    ╚═╝    ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝  ║");
+        printlnColor("╚══════════════════════════════════════════════════════════════════╝");
         System.out.println('\n');
     }
 }
